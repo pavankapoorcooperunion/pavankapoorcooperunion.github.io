@@ -1,5 +1,8 @@
 # Pavan Kapoor: Mechanical Engineering Portfolio 
 
+* Do not remove this line (it will not be displayed)
+{:toc}
+
 # About Me
 #### Mechanical Engineering Junior at The Cooper Union for the Advancement of Science and Art. Expected Graduation 2026
 

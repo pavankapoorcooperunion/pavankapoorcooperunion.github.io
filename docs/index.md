@@ -1,9 +1,3 @@
----
-layout: default
-title: My Page Title
----
-
-
 # Pavan Kapoor: Mechanical Engineering Portfolio 
 
 # About Me

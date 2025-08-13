@@ -288,11 +288,11 @@ The factor of safety for the harness tab is 2.1.
 <table style="border-collapse: collapse; border: none;">
   <tr>
     <td style="border: none;"><img src="SUMo/top2.jpeg" alt="FWP1" width="400"/></td>
-    <td style="border: none;"><img src="SUMo/Iso.jpeg" alt="FWP2" width="400"/></td>
+    <td style="border: none;"><img src="SUMo/back.jpeg" alt="FWP2" width="400"/></td>
   </tr>
  <tr>
  <tr>
-    <td colspan="2" style="border: none; text-align: center;"><img src="SUMo/back.jpeg" alt="FWP1" width="400"/></td>
+    <td colspan="2" style="border: none; text-align: center;"><img src="SUMo/Iso.jpeg" alt="FWP1" width="400"/></td>
   </tr>
   </tr>
 </table>

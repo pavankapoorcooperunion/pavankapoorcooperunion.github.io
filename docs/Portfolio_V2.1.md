@@ -50,6 +50,9 @@ table.gallery img { width:100% !important; height:auto !important; border-radius
 
 # Pavan Kapoor: Mechanical Engineering Portfolio
 
+Welcome to my mechanical engineering portfolio. This site highlights select academic, internship, and personal projects focused on vehicle design, energy systems, and manufacturing.
+
+---
 - [Pavan Kapoor: Mechanical Engineering Portfolio](#pavan-kapoor-mechanical-engineering-portfolio)
 - [Cooper Union Motorsports: Formula SAE](#cooper-union-motorsports-formula-sae)
   - [Nosecone](#nosecone)
@@ -69,23 +72,25 @@ table.gallery img { width:100% !important; height:auto !important; border-radius
   - [Harness Tabs](#harness-tabs)
   - [Drivetrain \& Accumulator Mounting](#drivetrain--accumulator-mounting)
 - [Class Projects](#class-projects)
+  - [Impedance Tube](#impedance-tube)
   - [3 Month Sumo Robot Project](#3-month-sumo-robot-project)
     - [CAD](#cad-1)
     - [Test prints](#test-prints)
     - [3D Printed Chassis](#3d-printed-chassis)
     - [Custom Silicone wheels](#custom-silicone-wheels)
     - [Final Robot](#final-robot)
+- [Computational Fluid Dynamics Projects](#computational-fluid-dynamics-projects)
 - [CNC Machining Projects](#cnc-machining-projects)
   - [Name Plate Engraving](#name-plate-engraving)
   - [Weight-Efficient Coaster](#weight-efficient-coaster)
+- [Additional](#additional)
+  - [Random 3D Prints (exclusively things I CADed myself)](#random-3d-prints-exclusively-things-i-caded-myself)
 - [Contact](#contact)
 
 # Cooper Union Motorsports: Formula SAE
 
 ![Car](Images/car.png)
-
 #### Body/Cockpit/Safety System Assembly that I Desgined(Excluding frame)
-
 ![Assembly](Images/ASSEM.png)
 
 ## Nosecone
@@ -104,7 +109,6 @@ table.gallery img { width:100% !important; height:auto !important; border-radius
 </table>
 
 ### Infusion Layup Setup
-
 <table style="border-collapse: collapse; border: none;">
   <tr>
     <td style="border: none;"><img src="Nosecone/NC5.JPG" alt="NC5" width="400"/></td>
@@ -113,7 +117,6 @@ table.gallery img { width:100% !important; height:auto !important; border-radius
 </table>
 
 ### Resin Infusion
-
 <table style="border-collapse: collapse; border: none;">
   <tr>
     <td style="border: none;"><img src="Nosecone/NC7.JPG" alt="NC7" width="400"/></td>
@@ -122,7 +125,6 @@ table.gallery img { width:100% !important; height:auto !important; border-radius
 </table>
 
 ### Post-Processing
-
 <table style="border-collapse: collapse; border: none;">
   <tr>
     <td style="border: none;"><img src="Nosecone/NC9.JPG" alt="NC9" width="400"/></td>
@@ -132,15 +134,20 @@ table.gallery img { width:100% !important; height:auto !important; border-radius
 
 ![NC11](Nosecone/NC11.JPG)
 
+
 ### Post-Vinyl
 
 ![NC12](Nosecone/NC12.JPG)
 
-## Firewall: Electrically and Thermally Insulative, Ballistically Protective
+
+
+##  Firewall: Electrically and Thermally Insulative, Ballistically Protective
 
 ### Materials
 
 The Firewall is made of a sandwich panel of 6 layers of 200 gsm bidirectional basalt fiber with a sheet of Nomex Honeycomb in the middle. It also has a layer of 0.64mm thick 6061 Aluminum facing the tractive system. I used Basalt because it had the highest resistivity and acceptable tensile strength. The Nomex Honeycomb adds an air gap which improves the area moment of interia and the thermal resistivity of the panel leading to greater stiffness and themral insulation without adding more layers of basalt.
+
+
 
 ### Design
 
@@ -156,7 +163,6 @@ The Firewall is made of a sandwich panel of 6 layers of 200 gsm bidirectional ba
 ![FW3](Firewall/FW3.png)
 
 #### Lasercut Plywood prototype
-
 <table style="border-collapse: collapse; border: none;">
   <tr>
     <td style="border: none;"><img src="Firewall/FWP1.JPG" alt="FWP1" width="400"/></td>
@@ -168,7 +174,6 @@ The Firewall is made of a sandwich panel of 6 layers of 200 gsm bidirectional ba
 </table>
 
 ### Lower Firewall Manufacturing
-
 <table style="border-collapse: collapse; border: none;">
   <tr>
     <td style="border: none;"><img src="Firewall/FW4.JPG" alt="FW4" width="400"/></td>
@@ -198,7 +203,6 @@ The Firewall is made of a sandwich panel of 6 layers of 200 gsm bidirectional ba
 </table>
 
 #### Post Processed
-
 ![UF4](Firewall/UFW5.JPG)
 
 ---
@@ -215,6 +219,7 @@ The Firewall is made of a sandwich panel of 6 layers of 200 gsm bidirectional ba
 </table>
 
 ### Impact Attenuator Adhesion
+
 
 ![AIP](IA_AIP/AIP.JPG)
 
@@ -241,18 +246,18 @@ The factor of safety for the harness tab is 2.1.
 ## Drivetrain & Accumulator Mounting
 
 #### Drivetrain Mounting Fixture
-
 ![Fixture](Drivetrain_Accum_Weld/fixture.JPG)
 
 #### Drivetrain Tabs Tack Welded
-
 ![Tacked](Drivetrain_Accum_Weld/tack.JPG)
 
 #### My Friend and I welding the Accumalator Tabs under intense time pressure
-
 ![Accum/weld](Drivetrain_Accum_Weld/accumweld.JPG)
 
+
 # Class Projects
+
+## Impedance Tube
 
 ## 3 Month Sumo Robot Project
 
@@ -274,6 +279,9 @@ The factor of safety for the harness tab is 2.1.
 
 ![print](SUMo/Printvid.gif)
 
+
+
+
 ### Custom Silicone wheels
 
 <table style="border-collapse: collapse; border: none;">
@@ -290,38 +298,47 @@ The factor of safety for the harness tab is 2.1.
 ![final_wheel](SUMo/Wheel5.JPG)
 
 ### Final Robot
-
 <table style="border-collapse: collapse; border: none;">
   <tr>
     <td style="border: none;"><img src="SUMo/top2.jpeg" alt="FWP1" width="400"/></td>
-    <td style="border: none;"><img src="SUMo/back.jpeg" alt="FWP2" width="400"/></td>
+    <td style="border: none;"><img src="SUMo/Iso.jpeg" alt="FWP2" width="400"/></td>
   </tr>
  <tr>
  <tr>
-    <td colspan="2" style="border: none; text-align: center;"><img src="SUMo/Iso.jpeg" alt="FWP1" width="400"/></td>
+    <td colspan="2" style="border: none; text-align: center;"><img src="SUMo/back.jpeg" alt="FWP1" width="400"/></td>
   </tr>
   </tr>
 </table>
 
+
 ![final_right](SUMo/Match2.gif)
+
+
+# Computational Fluid Dynamics Projects
+
+
+
 
 # CNC Machining Projects
 
 ## Name Plate Engraving
-
 ![NP1](CNC/NP1.JPG)
 ![NP2](CNC/NP2.JPG)
 ![NP3](CNC/NP3.JPG)
 
 ## Weight-Efficient Coaster
-
 ![AlU_C1](CNC/ALU_C1.JPG)
 ![AlU_CVid](CNC/CNC_VID.gif)
 ![AlU_C2](CNC/ALU_C2.JPG)
 ![AlU_C3](CNC/ALU_C3.JPG)
 
+# Additional 
+
+## Random 3D Prints (exclusively things I CADed myself)
+
+3
+
 ---
 
 # Contact
-
 - [pavantarunkapoor@gmail.com](mailto:your.email@example.com)

@@ -50,7 +50,6 @@ table.gallery img { width:100% !important; height:auto !important; border-radius
 
 # Pavan Kapoor: Mechanical Engineering Portfolio
 
-Welcome to my mechanical engineering portfolio. This site highlights select academic, internship, and personal projects focused on vehicle design, energy systems, and manufacturing.
 
 ---
 - [Pavan Kapoor: Mechanical Engineering Portfolio](#pavan-kapoor-mechanical-engineering-portfolio)
@@ -74,12 +73,14 @@ Welcome to my mechanical engineering portfolio. This site highlights select acad
 - [Class Projects](#class-projects)
   - [Impedance Tube](#impedance-tube)
   - [3 Month Sumo Robot Project](#3-month-sumo-robot-project)
-    - [CAD](#cad-1)
+    - [Design](#design-1)
     - [Test prints](#test-prints)
     - [3D Printed Chassis](#3d-printed-chassis)
     - [Custom Silicone wheels](#custom-silicone-wheels)
     - [Final Robot](#final-robot)
 - [Computational Fluid Dynamics Projects](#computational-fluid-dynamics-projects)
+  - [Automotive Oil Heat Exchanger](#automotive-oil-heat-exchanger)
+  - [Axial Air Compressor](#axial-air-compressor)
 - [CNC Machining Projects](#cnc-machining-projects)
   - [Name Plate Engraving](#name-plate-engraving)
   - [Weight-Efficient Coaster](#weight-efficient-coaster)
@@ -261,7 +262,24 @@ The factor of safety for the harness tab is 2.1.
 
 ## 3 Month Sumo Robot Project
 
-### CAD
+
+### Design
+
+#### Design Constraints
+- 10"x 10" x 5" size constraint
+- Cost under $200
+- Total weight under 5lbs
+- 3A max stall current for all motors
+- 14V maximum battery
+- Only using ATMega328P
+
+#### Design Methodology
+- The plan was to maximise grip on the drive wheels. The stall current limitation likely meant most motors would similar torque specs, hence weight and grip would drive which robot would resist pushing.
+- To maximise grip we optimized two parameters, the normal force and the friction coefficient between the wheels and the ground.
+#### Ground Effect Downforce
+- The robot was built to weigh close to 5lbs. We add a fan to suck air from underneath the robot to generate downforce. The idea was to increase the normal force on the robot without exceeding the weight limit of 5lbs since the robot was weighed with the fan turned off.
+- Due to the power limitation on the fan motor, the fan did not generate a measureable amount of downforce. It was cool concept to implement regardless of its effectiveness
+
 
 ![CAD1](SUMo/CAD1.png)
 ![CAD2](SUMo/CAD2.png)
@@ -283,6 +301,12 @@ The factor of safety for the harness tab is 2.1.
 
 
 ### Custom Silicone wheels
+
+- To optimize the friction coefficient between the wheels and the ground, I made custom 3D printed wheels with silicone cast tires. I used a soft durometer silicone and designed a wheel rim and mold to cast the silicone around the wheel rim.
+- Additionally I designed the chassis so that the real wheels maintained contact with the ground when the front was lifted (like with a wedge during a match). The can be seen in action in the videos below.
+- Initially I designed the battery to be housed in the front to make it harder to lift the front and to balance the weight distribution with the two motors in the back. 
+- But in practice the motors had too much torque and the wheels were slipping. Moving the battery to the back significantly increased the grip on the driving wheels. This made the front end easier to lift, but the trade off was worth it since the driving wheels had much more grip and maintied contact with the ground when the front was lifted.
+  
 
 <table style="border-collapse: collapse; border: none;">
   <tr>
@@ -312,11 +336,14 @@ The factor of safety for the harness tab is 2.1.
 
 
 ![final_right](SUMo/Match2.gif)
+![Match3](SUMo/match_3.gif)
 
 
 # Computational Fluid Dynamics Projects
 
+## Automotive Oil Heat Exchanger
 
+## Axial Air Compressor
 
 
 # CNC Machining Projects
@@ -336,9 +363,20 @@ The factor of safety for the harness tab is 2.1.
 
 ## Random 3D Prints (exclusively things I CADed myself)
 
-3
+Wallet Design
+
+Dry Erase marker holder
+
+
 
 ---
 
 # Contact
 - [pavantarunkapoor@gmail.com](mailto:your.email@example.com)
+
+
+- 2.1 goals
+- Impedance tube
+- Heat Exchanger CFD 
+- Air Compressor CFD
+- Random 3D printer projects (maybe)

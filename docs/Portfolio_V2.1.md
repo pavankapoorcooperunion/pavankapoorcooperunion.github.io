@@ -80,10 +80,12 @@ table.gallery img { width:100% !important; height:auto !important; border-radius
     - [Final Robot](#final-robot)
 - [Computational Fluid Dynamics Projects](#computational-fluid-dynamics-projects)
   - [Automotive Oil Heat Exchanger](#automotive-oil-heat-exchanger)
+    - [Design Constraints](#design-constraints-1)
   - [Axial Air Compressor](#axial-air-compressor)
+    - [Design Constraints](#design-constraints-2)
 - [CNC Machining Projects](#cnc-machining-projects)
   - [Name Plate Engraving](#name-plate-engraving)
-  - [Weight-Efficient Coaster](#weight-efficient-coaster)
+  - [Iso Grid Coaster](#iso-grid-coaster)
 - [Additional](#additional)
   - [Random 3D Prints (exclusively things I CADed myself)](#random-3d-prints-exclusively-things-i-caded-myself)
 - [Contact](#contact)
@@ -240,7 +242,7 @@ The factor of safety for the harness tab is 2.1.
     <td style="border: none;"><img src="Harness/harness4.png" alt="HR4" width="400"/></td>
   </tr>
   <tr>
-    <td colspan="2" style="border: none; text-align: center;"><img src="Harness/harness2.png" alt="HR2" width="400"/></td>
+    <td colspan="2" style="border: none; text-align: center;"><img src="Harness/harness2.png" alt="HR2" width="500"/></td>
   </tr>
 </table>
 
@@ -343,8 +345,13 @@ The factor of safety for the harness tab is 2.1.
 
 ## Automotive Oil Heat Exchanger
 
+### Design Constraints
+- 
+
 ## Axial Air Compressor
 
+### Design Constraints
+- 
 
 # CNC Machining Projects
 
@@ -353,7 +360,7 @@ The factor of safety for the harness tab is 2.1.
 ![NP2](CNC/NP2.JPG)
 ![NP3](CNC/NP3.JPG)
 
-## Weight-Efficient Coaster
+## Iso Grid Coaster
 ![AlU_C1](CNC/ALU_C1.JPG)
 ![AlU_CVid](CNC/CNC_VID.gif)
 ![AlU_C2](CNC/ALU_C2.JPG)
@@ -375,8 +382,4 @@ Dry Erase marker holder
 - [pavantarunkapoor@gmail.com](mailto:your.email@example.com)
 
 
-- 2.1 goals
-- Impedance tube
-- Heat Exchanger CFD 
-- Air Compressor CFD
-- Random 3D printer projects (maybe)
+

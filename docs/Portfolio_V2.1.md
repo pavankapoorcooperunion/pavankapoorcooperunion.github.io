@@ -2,6 +2,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="color-scheme" content="light dark">
 
+<script>
+  document.title = "Pavan Kapoor — Portfolio";
+</script>
+
+
 
 <style>
 /* Compact centered layout */
@@ -51,7 +56,7 @@ table.gallery img { width:100% !important; height:auto !important; border-radius
 # Pavan Kapoor: Mechanical Engineering Portfolio
 
 
----
+
 - [Pavan Kapoor: Mechanical Engineering Portfolio](#pavan-kapoor-mechanical-engineering-portfolio)
 - [Cooper Union Motorsports: Formula SAE](#cooper-union-motorsports-formula-sae)
   - [Nosecone](#nosecone)

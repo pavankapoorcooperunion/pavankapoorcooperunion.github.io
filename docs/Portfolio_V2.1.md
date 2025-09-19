@@ -77,16 +77,18 @@ table.gallery img { width:100% !important; height:auto !important; border-radius
   - [Drivetrain \& Accumulator Mounting](#drivetrain--accumulator-mounting)
 - [Class Projects](#class-projects)
   - [Impedance Tube](#impedance-tube)
-  - [3 Month Sumo Robot Project](#3-month-sumo-robot-project)
     - [Design](#design-1)
+  - [Sumo Robot Project](#sumo-robot-project)
+    - [Design](#design-2)
     - [Test prints](#test-prints)
     - [3D Printed Chassis](#3d-printed-chassis)
-    - [Custom Silicone wheels](#custom-silicone-wheels)
+    - [Overmolded Silicone Wheels](#overmolded-silicone-wheels)
     - [Final Robot](#final-robot)
 - [Computational Fluid Dynamics Projects](#computational-fluid-dynamics-projects)
-  - [Automotive Oil Heat Exchanger](#automotive-oil-heat-exchanger)
+  - [Axial Air Compressor for Turbofan Engine](#axial-air-compressor-for-turbofan-engine)
     - [Design Constraints](#design-constraints-1)
-  - [Axial Air Compressor](#axial-air-compressor)
+    - [Assumptions](#assumptions)
+  - [Automotive Oil Heat Exchanger](#automotive-oil-heat-exchanger)
     - [Design Constraints](#design-constraints-2)
 - [CNC Machining Projects](#cnc-machining-projects)
   - [Name Plate Engraving](#name-plate-engraving)
@@ -267,7 +269,19 @@ The factor of safety for the harness tab is 2.1.
 
 ## Impedance Tube
 
-## 3 Month Sumo Robot Project
+### Design
+
+
+
+#### Goal
+
+Design an experimental setup to measure acoustic absorption coefficients of panel materials.
+
+#### Constraits
+- Use exisiting equipment where possible
+- Ensure repeatability and accuracy
+
+## Sumo Robot Project
 
 
 ### Design
@@ -307,7 +321,7 @@ The factor of safety for the harness tab is 2.1.
 
 
 
-### Custom Silicone wheels
+### Overmolded Silicone Wheels
 
 - To optimize the friction coefficient between the wheels and the ground, I made custom 3D printed wheels with silicone cast tires. I used a soft durometer silicone and designed a wheel rim and mold to cast the silicone around the wheel rim.
 - Additionally I designed the chassis so that the real wheels maintained contact with the ground when the front was lifted (like with a wedge during a match). The can be seen in action in the videos below.
@@ -348,15 +362,22 @@ The factor of safety for the harness tab is 2.1.
 
 # Computational Fluid Dynamics Projects
 
+## Axial Air Compressor for Turbofan Engine 
+
+### Design Constraints
+- Achieve 20:1 Pressure ratio
+- Maximum Altitude of 40,000'
+- Outer Diameter between 5ft and 6ft
+- Maximum RPM of any stage should be less than 50,000rpm
+
+### Assumptions
+
+
 ## Automotive Oil Heat Exchanger
 
 ### Design Constraints
 - 
 
-## Axial Air Compressor
-
-### Design Constraints
-- 
 
 # CNC Machining Projects
 

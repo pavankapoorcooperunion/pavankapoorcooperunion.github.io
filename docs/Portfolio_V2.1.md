@@ -88,6 +88,13 @@ table.gallery img { width:100% !important; height:auto !important; border-radius
   - [Axial Air Compressor for Turbofan Engine](#axial-air-compressor-for-turbofan-engine)
     - [Design Constraints](#design-constraints-1)
     - [Assumptions](#assumptions)
+    - [Hand Calculations](#hand-calculations)
+    - [Parametric CAD model](#parametric-cad-model)
+    - [Geometry Preprocessing](#geometry-preprocessing)
+    - [Mesh](#mesh)
+    - [Stage 1 Simulation](#stage-1-simulation)
+    - [Stage 4 Simulation](#stage-4-simulation)
+    - [Results](#results)
   - [Automotive Oil Heat Exchanger](#automotive-oil-heat-exchanger)
     - [Design Constraints](#design-constraints-2)
 - [CNC Machining Projects](#cnc-machining-projects)
@@ -277,7 +284,7 @@ The factor of safety for the harness tab is 2.1.
 
 Design an experimental setup to measure acoustic absorption coefficients of panel materials.
 
-#### Constraits
+#### Constraints
 - Use exisiting equipment where possible
 - Ensure repeatability and accuracy
 
@@ -372,6 +379,31 @@ Design an experimental setup to measure acoustic absorption coefficients of pane
 
 ### Assumptions
 
+
+### Hand Calculations
+
+### Parametric CAD model
+
+![CAD1](CFD_Air/CAD_1.png)
+![CAD1](CFD_Air/CAD_2.png)
+![CAD1](CFD_Air/CAD_3.png)
+![CAD1](CFD_Air/CAD_5.png)
+![CAD1](CFD_Air/CAD_4.png)
+
+
+
+### Geometry Preprocessing
+
+### Mesh
+
+### Stage 1 Simulation
+
+
+
+
+### Stage 4 Simulation
+
+### Results
 
 ## Automotive Oil Heat Exchanger
 

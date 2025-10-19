@@ -81,9 +81,14 @@ table.gallery img { width:100% !important; height:auto !important; border-radius
     - [Design parameters](#design-parameters)
     - [Simulation](#simulation)
     - [Results](#results)
-- [Class Projects](#class-projects)
-  - [Sumo Robot Project](#sumo-robot-project)
+  - [Automotive Oil Heat Exchanger](#automotive-oil-heat-exchanger)
+    - [Problem Setup](#problem-setup)
     - [Design](#design-1)
+- [Class Projects](#class-projects)
+  - [Impedance Tube](#impedance-tube)
+    - [Design](#design-2)
+  - [Sumo Robot Project](#sumo-robot-project)
+    - [Design](#design-3)
     - [Test prints](#test-prints)
     - [3D Printed Chassis](#3d-printed-chassis)
     - [Overmolded Silicone Wheels](#overmolded-silicone-wheels)
@@ -386,9 +391,43 @@ Built fully Parametric CAD Model in Onshape with ability to rapidly adjust the f
  
 <br><br>
 
+## Automotive Oil Heat Exchanger
+
+### Problem Setup
+#### Design Constraints
+
+### Design
+
+#### Hand Calculation
+![alt text](HEX_hand.png)
+The Hand Calculations for the Heat Exchanger Design are layed out in sections in an Excel Sheet. The far left hand side has the material properties for oil and air at different temperatures. The section to the right calculates the velocity effects and reynolds number of the ducts on the incoming air. 
+
+The flow regime of the oil is determined by finding the velocity of the oil based on the required flow rate and the cross section of oil pipe being tested.In the heat trasnfer section of the excel, the Reynolds number of the oil and air is used to which nusselts number correlation can be used for each fluid. 
+Then an equivalent thermal resistance is found for path of the heat from the oil to the pipe wall to the air. 
+Based on the requirements of the inlet and outlet oil temperatures, we found the energy rate/Power that had to be extracted from the oil. We then used the energy rate, the thermal resistance and the surface area of the pipe to find the total length of oil pipe we need to meet the temperature requirements.
+
+The Excel sheet allowed us to iterate air duct sizing and oil pipe sizing to meet the temperature requirements while staying within other constraints.
+
+
+
+
 
 
 # Class Projects
+
+## Impedance Tube
+
+### Design
+
+
+
+#### Goal
+
+Design an experimental setup to measure acoustic absorption coefficients of panel materials.
+
+#### Constraints
+- Use exisiting equipment where possible
+- Ensure repeatability and accuracy
 
 ## Sumo Robot Project
 
@@ -502,6 +541,7 @@ Designed and built cookie cutter press to make a custom shape cookie cutter.
 
 # Contact
 - [pavantarunkapoor@gmail.com](mailto:your.email@example.com)
+- [Resume]()
 - [Linkedin: www.linkedin.com/in/pavankap00r](www.linkedin.com/in/pavankap00r)
 
 

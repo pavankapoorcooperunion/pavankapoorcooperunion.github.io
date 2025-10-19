@@ -75,33 +75,30 @@ table.gallery img { width:100% !important; height:auto !important; border-radius
     - [Impact Attenuator Adhesion](#impact-attenuator-adhesion)
   - [Harness Tabs](#harness-tabs)
   - [Drivetrain \& Accumulator Mounting](#drivetrain--accumulator-mounting)
+- [Computational Fluid Dynamics Projects](#computational-fluid-dynamics-projects)
+  - [Axial Air Compressor for Turbofan Engine](#axial-air-compressor-for-turbofan-engine)
+    - [Design Constraints](#design-constraints)
+    - [Design parameters](#design-parameters)
+    - [Simulation](#simulation)
+    - [Results](#results)
+  - [Automotive Oil Heat Exchanger](#automotive-oil-heat-exchanger)
+    - [Problem Setup](#problem-setup)
+    - [Design](#design-1)
 - [Class Projects](#class-projects)
   - [Impedance Tube](#impedance-tube)
-    - [Design](#design-1)
-  - [Sumo Robot Project](#sumo-robot-project)
     - [Design](#design-2)
+  - [Sumo Robot Project](#sumo-robot-project)
+    - [Design](#design-3)
     - [Test prints](#test-prints)
     - [3D Printed Chassis](#3d-printed-chassis)
     - [Overmolded Silicone Wheels](#overmolded-silicone-wheels)
     - [Final Robot](#final-robot)
-- [Computational Fluid Dynamics Projects](#computational-fluid-dynamics-projects)
-  - [Axial Air Compressor for Turbofan Engine](#axial-air-compressor-for-turbofan-engine)
-    - [Design Constraints](#design-constraints-1)
-    - [Assumptions](#assumptions)
-    - [Hand Calculations](#hand-calculations)
-    - [Parametric CAD model](#parametric-cad-model)
-    - [Geometry Preprocessing](#geometry-preprocessing)
-    - [Mesh](#mesh)
-    - [Stage 1 Simulation](#stage-1-simulation)
-    - [Stage 4 Simulation](#stage-4-simulation)
-    - [Results](#results)
-  - [Automotive Oil Heat Exchanger](#automotive-oil-heat-exchanger)
-    - [Design Constraints](#design-constraints-2)
+  - [Cookie Cutter Press](#cookie-cutter-press)
+    - [Version 2](#version-2)
+    - [Version 1](#version-1)
 - [CNC Machining Projects](#cnc-machining-projects)
   - [Name Plate Engraving](#name-plate-engraving)
   - [Iso Grid Coaster](#iso-grid-coaster)
-- [Additional](#additional)
-  - [Random 3D Prints (exclusively things I CADed myself)](#random-3d-prints-exclusively-things-i-caded-myself)
 - [Contact](#contact)
 
 # Cooper Union Motorsports: Formula SAE
@@ -272,6 +269,150 @@ The factor of safety for the harness tab is 2.1.
 ![Accum/weld](Drivetrain_Accum_Weld/accumweld.JPG)
 
 
+
+# Computational Fluid Dynamics Projects
+
+## Axial Air Compressor for Turbofan Engine 
+Designed and simulated a multi-stage axial compressor capable of achieving a 20:1 pressure ratio at 40,000 ft.  
+Simulations were performed in ANSYS Fluent using detailed stage-by-stage geometry and validated at both altitude and sea-level conditions.
+
+### Design Constraints
+- Achieve 20:1 Pressure ratio
+- Maximum Altitude of 40,000'
+- Outer Diameter between 5ft and 6ft
+- Maximum RPM of any stage should be less than 50,000rpm
+
+
+### Design parameters
+<div align="center">
+
+
+| Parameter                  |  Value | Unit |
+|---------------------------|------:|:----|
+| Rotational speed          |  2500 | rpm |
+| Outer Diameter            |  5.96 | ft  |
+| Length                    |  23.4 | ft  |
+| Maximum blade length      |  25.8 | in  |
+| Minimum blade length      |   3.2 | in  |
+| Dry Mass                  | 11000 | lbm |
+| Blade/Vane shape          | NACA 9506 | n/a |
+| Power at 40k              |  1087 | HP  |
+| Compression Ratio 40K     |    22 | —   |
+| Power at STP              |  4902 | HP  |
+| Compression Ratio STP     |    22 | —   |
+
+</div>
+
+<br><br>
+
+#### Hand Calculations
+![alt text](CFD_Air/Air_comp_hand.png)
+
+Stage-wise hand calculation to determine stage inlet & outlet area and angles of attack for rotors & stators required to meet the design criteria.
+
+
+#### Parametric CAD model
+Built fully Parametric CAD Model in Onshape with ability to rapidly adjust the following design parameters for each stage:
+
+- Stage inlet and outlet area
+- Rotor and stator
+  - number of blades 
+  - chord
+  - camber 
+  - angle of attack at base and tip
+
+
+![CAD1](CFD_Air/CAD_4.png)
+
+
+<table style="border-collapse: collapse; border: none;">
+  <tr>
+    <td style="border: none;"><img src="CFD_Air/CAD_1.png" alt="wheel1" width="400"/></td>
+    <td style="border: none;"><img src="CFD_Air/CAD_3.png" alt="wheel2" width="400"/></td>
+  </tr>
+  <tr>
+    <td style="border: none;"><img src="CFD_Air/CAD_2.png" alt="wheel3" width="400"/></td>
+    <td style="border: none;"><img src="CFD_Air/CAD_5.png" alt="wheel4" width="400"/></td>
+  </tr>
+</table>
+
+
+### Simulation
+
+#### Mesh
+
+##### Stage 1 Mesh
+![Mesh](CFD_Air/mesh_aspect.png)
+![Mesh](CFD_Air/mesheq.png)
+
+#### Stage 1 Simulation
+
+
+
+<video src="CFD_Air/S1_press.mp4" autoplay loop muted playsinline width="500"  controls></video>
+
+<video src="CFD_Air/S1_temp.mp4" autoplay loop muted playsinline width="500"  controls></video>
+
+<video src="CFD_Air/S1_stream.mp4" autoplay loop muted playsinline width="500"  controls></video>
+
+#### Stage 4 Simulation
+
+<video src="CFD_Air/S4_press_anim.mp4" autoplay loop muted playsinline width="500"  controls></video>
+
+<video src="CFD_Air/S4_temp_anim.mp4" autoplay loop muted playsinline width="500"  controls></video>
+
+<video src="CFD_Air/s4_path_anim.mp4" autoplay loop muted playsinline width="500"  controls></video>
+
+### Results
+- Achieved total 20 : 1 compression ratio across 17 stages   
+- Average Stage Efficiency of 82%
+- Pressure ratio and efficiency validated against hand calculations
+- Turbulence modeling, residual analysis, and mesh-independence verification  
+
+  
+<div align="center">
+<br><br>
+  
+*Table 1: Performance metrics for maximum operating altitude.*
+
+| *40,000 Feet*        | Inlet | Outlet | Unit |
+|----------------------|-----:|------:|:-----|
+| Ambient Pressure     |  2.7 |   103 | psi  |
+| Ambient Temperature  | -69.7|  1592 | F    |
+<br><br>
+
+*Table 2: Performance metrics at sea level.*
+
+| *Sea level*          | Inlet | Outlet | Unit |
+|----------------------|-----:|------:|:-----|
+| Ambient Pressure     | 14.7 |   223 | psi  |
+| Ambient Temperature  | 59.0 |  1253 | F    |
+</div>
+ 
+<br><br>
+
+## Automotive Oil Heat Exchanger
+
+### Problem Setup
+#### Design Constraints
+
+### Design
+
+#### Hand Calculation
+![alt text](HEX_hand.png)
+The Hand Calculations for the Heat Exchanger Design are layed out in sections in an Excel Sheet. The far left hand side has the material properties for oil and air at different temperatures. The section to the right calculates the velocity effects and reynolds number of the ducts on the incoming air. 
+
+The flow regime of the oil is determined by finding the velocity of the oil based on the required flow rate and the cross section of oil pipe being tested.In the heat trasnfer section of the excel, the Reynolds number of the oil and air is used to which nusselts number correlation can be used for each fluid. 
+Then an equivalent thermal resistance is found for path of the heat from the oil to the pipe wall to the air. 
+Based on the requirements of the inlet and outlet oil temperatures, we found the energy rate/Power that had to be extracted from the oil. We then used the energy rate, the thermal resistance and the surface area of the pipe to find the total length of oil pipe we need to meet the temperature requirements.
+
+The Excel sheet allowed us to iterate air duct sizing and oil pipe sizing to meet the temperature requirements while staying within other constraints.
+
+
+
+
+
+
 # Class Projects
 
 ## Impedance Tube
@@ -366,50 +507,19 @@ Design an experimental setup to measure acoustic absorption coefficients of pane
 ![final_right](SUMo/Match2.gif)
 ![Match3](SUMo/match_3.gif)
 
+## Cookie Cutter Press
 
-# Computational Fluid Dynamics Projects
+Designed and built cookie cutter press to make a custom shape cookie cutter.
 
-## Axial Air Compressor for Turbofan Engine 
+### Version 2
+![MFG](MFG/MFG_CC_V2.JPG)
+![MFG](MFG/MFG_V2_Result.JPG)
 
-### Design Constraints
-- Achieve 20:1 Pressure ratio
-- Maximum Altitude of 40,000'
-- Outer Diameter between 5ft and 6ft
-- Maximum RPM of any stage should be less than 50,000rpm
+<video src="MGF/" autoplay loop muted playsinline width="500"  controls></video>
 
-### Assumptions
-
-
-### Hand Calculations
-
-### Parametric CAD model
-
-![CAD1](CFD_Air/CAD_1.png)
-![CAD1](CFD_Air/CAD_2.png)
-![CAD1](CFD_Air/CAD_3.png)
-![CAD1](CFD_Air/CAD_5.png)
-![CAD1](CFD_Air/CAD_4.png)
-
-
-
-### Geometry Preprocessing
-
-### Mesh
-
-### Stage 1 Simulation
-
-
-
-
-### Stage 4 Simulation
-
-### Results
-
-## Automotive Oil Heat Exchanger
-
-### Design Constraints
-- 
-
+### Version 1
+![MFG](MFG/MFG_CC_V1.JPG)
+![MFG](MFG/MFG_CC_V1_result.JPG)
 
 # CNC Machining Projects
 
@@ -424,20 +534,17 @@ Design an experimental setup to measure acoustic absorption coefficients of pane
 ![AlU_C2](CNC/ALU_C2.JPG)
 ![AlU_C3](CNC/ALU_C3.JPG)
 
-# Additional 
-
-## Random 3D Prints (exclusively things I CADed myself)
-
-Wallet Design
-
-Dry Erase marker holder
-
 
 
 ---
 
 # Contact
 - [pavantarunkapoor@gmail.com](mailto:your.email@example.com)
+- [Resume]()
+- [Linkedin: www.linkedin.com/in/pavankap00r](www.linkedin.com/in/pavankap00r)
+
+
+
 
 
 

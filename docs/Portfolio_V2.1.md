@@ -267,6 +267,8 @@ The factor of safety for the harness tab is 2.1.
 
 # Computational Fluid Dynamics Projects
 
+![](CFD_Air/CAD_1.png)
+
 ## Axial Air Compressor for Turbofan Engine 
 Designed and simulated a multi-stage axial compressor capable of achieving a 20:1 pressure ratio at 40,000 ft.  
 Simulations were performed in ANSYS Fluent using detailed stage-by-stage geometry and validated at both altitude and sea-level conditions.
@@ -323,11 +325,11 @@ Built fully Parametric CAD Model in Onshape with ability to rapidly adjust the f
 <table style="border-collapse: collapse; border: none;">
   <tr>
     <td style="border: none;"><img src="CFD_Air/CAD_1.png" alt="wheel1" width="400"/></td>
-    <td style="border: none;"><img src="CFD_Air/CAD_3.png" alt="wheel2" width="400"/></td>
+    <td style="border: none;"><img src="CFD_Air/CAD_7.png" alt="wheel2" width="400"/></td>
   </tr>
   <tr>
     <td style="border: none;"><img src="CFD_Air/CAD_2.png" alt="wheel3" width="400"/></td>
-    <td style="border: none;"><img src="CFD_Air/CAD_5.png" alt="wheel4" width="400"/></td>
+    <td style="border: none;"><img src="CFD_Air/CAD_6.png" alt="wheel4" width="400"/></td>
   </tr>
 </table>
 
@@ -342,21 +344,24 @@ Built fully Parametric CAD Model in Onshape with ability to rapidly adjust the f
 
 #### Stage 1 Simulation
 
+<div align="center">
 
+<video src="CFD_Air/S1_press.mp4" autoplay loop muted playsinline width="600"  controls></video>
 
-<video src="CFD_Air/S1_press.mp4" autoplay loop muted playsinline width="500"  controls></video>
+<video src="CFD_Air/S1_temp.mp4" autoplay loop muted playsinline width="600"  controls></video>
 
-<video src="CFD_Air/S1_temp.mp4" autoplay loop muted playsinline width="500"  controls></video>
-
-<video src="CFD_Air/S1_stream.mp4" autoplay loop muted playsinline width="500"  controls></video>
+<video src="CFD_Air/S1_stream.mp4" autoplay loop muted playsinline width="600"  controls></video>
+</div>
 
 #### Stage 4 Simulation
+<div align="center">
 
-<video src="CFD_Air/S4_press_anim.mp4" autoplay loop muted playsinline width="500"  controls></video>
+<video src="CFD_Air/S4_press_anim.mp4" autoplay loop muted playsinline width="600"  controls></video>
 
-<video src="CFD_Air/S4_temp_anim.mp4" autoplay loop muted playsinline width="500"  controls></video>
+<video src="CFD_Air/S4_temp_anim.mp4" autoplay loop muted playsinline width="600"  controls></video>
 
-<video src="CFD_Air/s4_path_anim.mp4" autoplay loop muted playsinline width="500"  controls></video>
+<video src="CFD_Air/s4_path_anim.mp4" autoplay loop muted playsinline width="600"  controls></video>
+</div>
 
 ### Results
 - Achieved total 20 : 1 compression ratio across 17 stages   

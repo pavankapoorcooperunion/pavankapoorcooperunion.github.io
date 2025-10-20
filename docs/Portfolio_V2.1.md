@@ -93,7 +93,7 @@ table.gallery img { width:100% !important; height:auto !important; border-radius
     - [Version 1](#version-1)
 - [CNC Machining Projects](#cnc-machining-projects)
   - [Name Plate Engraving](#name-plate-engraving)
-  - [Iso Grid Coaster](#iso-grid-coaster)
+  - [Isogrid Coaster](#isogrid-coaster)
 - [Contact](#contact)
 
 # Cooper Union Motorsports: Formula SAE
@@ -236,7 +236,7 @@ The Firewall is made of a sandwich panel of 6 layers of 200 gsm bidirectional ba
 
 ## Harness Tabs
 
-Harness tab was designed to be able withstand 15,000 N of tear-out load per tab based on rules from FSAE.
+Harness tab was designed to be able to withstand 15,000 N of tear-out load per tab based on rules from FSAE.
 
 The tabs were designed to be manufactured from rectangular steel tubing so that the bolts were in double shear while being easy and efficient to manufacture since it was milled out of correctly sized tube rather than a solid block of steel. Although 2 tabs cut from 1/8" sheet metal could have been used, it would have been very challenging to weld the inside edge of the tab as required by rules. Used M12 high-strength alloy steel shouldered bolts.
 
@@ -294,7 +294,7 @@ Simulations were performed in ANSYS Fluent using detailed stage-by-stage geometr
 | Maximum blade length      |  25.8 | in  |
 | Minimum blade length      |   3.2 | in  |
 | Dry Mass                  | 11000 | lbm |
-| Blade/Vane shape          | NACA 9506 | n/a |
+| Blade/Vane shape          | NACA 9506 | - |
 | Power at 40k              |  1087 | HP  |
 | Compression Ratio 40K     |    22 | —   |
 | Power at STP              |  4902 | HP  |
@@ -348,21 +348,21 @@ Built fully Parametric CAD Model in Onshape with ability to rapidly adjust the f
 
 <div align="center">
 
-<video src="CFD_Air/S1_press.mp4" autoplay loop muted playsinline width="600"  controls></video>
+<video src="CFD_Air/S1_press.mp4" autoplay loop muted playsinline width="600" ></video>
 
-<video src="CFD_Air/S1_temp.mp4" autoplay loop muted playsinline width="600"  controls></video>
+<video src="CFD_Air/S1_temp.mp4" autoplay loop muted playsinline width="600"  ></video>
 
-<video src="CFD_Air/S1_stream.mp4" autoplay loop muted playsinline width="600"  controls></video>
+<video src="CFD_Air/S1_stream.mp4" autoplay loop muted playsinline width="600" ></video>
 </div>
 
 #### Stage 4 Simulation
 <div align="center">
 
-<video src="CFD_Air/S4_press_anim.mp4" autoplay loop muted playsinline width="600"  controls></video>
+<video src="CFD_Air/S4_press_anim.mp4" autoplay loop muted playsinline width="600" ></video>
 
-<video src="CFD_Air/S4_temp_anim.mp4" autoplay loop muted playsinline width="600"  controls></video>
+<video src="CFD_Air/S4_temp_anim.mp4" autoplay loop muted playsinline width="600" ></video>
 
-<video src="CFD_Air/s4_path_anim.mp4" autoplay loop muted playsinline width="600"  controls></video>
+<video src="CFD_Air/s4_path_anim.mp4" autoplay loop muted playsinline width="600" ></video>
 </div>
 
 ### Results
@@ -377,7 +377,7 @@ Built fully Parametric CAD Model in Onshape with ability to rapidly adjust the f
   
 *Table 1: Performance metrics for maximum operating altitude.*
 
-| *40,000 Feet*        | Inlet | Outlet | Unit |
+| 40,000 Feet       | Inlet | Outlet | Unit |
 |----------------------|-----:|------:|:-----|
 | Ambient Pressure     |  2.7 |   103 | psi  |
 | Ambient Temperature  | -69.7|  1592 | F    |
@@ -385,7 +385,7 @@ Built fully Parametric CAD Model in Onshape with ability to rapidly adjust the f
 
 *Table 2: Performance metrics at sea level.*
 
-| *Sea level*          | Inlet | Outlet | Unit |
+| Sea level        | Inlet | Outlet | Unit |
 |----------------------|-----:|------:|:-----|
 | Ambient Pressure     | 14.7 |   223 | psi  |
 | Ambient Temperature  | 59.0 |  1253 | F    |
@@ -440,9 +440,9 @@ Built fully Parametric CAD Model in Onshape with ability to rapidly adjust the f
 ### Overmolded Silicone Wheels
 
 - To optimize the friction coefficient between the wheels and the ground, I made custom 3D printed wheels with silicone cast tires. I used a soft durometer silicone and designed a wheel rim and mold to cast the silicone around the wheel rim.
-- Additionally I designed the chassis so that the rear wheels maintained contact with the ground when the front was lifted (like with a wedge during a match). The can be seen in action in the videos below.
+- Additionally I designed the chassis so that the rear wheels maintained contact with the ground when the front was lifted (like with a wedge during a match). This can be seen in action in the videos below.
 - Initially I designed the battery to be housed in the front to make it harder to lift the front and to balance the weight distribution with the two motors in the back. 
-- But in practice the motors had too much torque and the wheels were slipping. Moving the battery to the back significantly increased the grip on the driving wheels. This made the front end easier to lift, but the trade off was worth it since the driving wheels had much more grip and maintained contact with the ground when the front was lifted.
+- However, in practice the motors had too much torque and the wheels were slipping. Moving the battery to the back significantly increased the grip on the driving wheels. This made the front end easier to lift, but the trade off was worth it since the driving wheels had much more grip and maintained contact with the ground when the front was lifted.
   
 
 <table style="border-collapse: collapse; border: none;">
@@ -499,7 +499,7 @@ Designed and built cookie cutter press to make a custom shape cookie cutter. My 
 ![NP2](CNC/NP2.JPG)
 ![NP3](CNC/NP3.JPG)
 
-## Iso Grid Coaster
+## Isogrid Coaster
 ![AlU_C1](CNC/ALU_C1.JPG)
 ![AlU_CVid](CNC/CNC_VID.gif)
 ![AlU_C2](CNC/ALU_C2.JPG)
@@ -510,7 +510,7 @@ Designed and built cookie cutter press to make a custom shape cookie cutter. My 
 ---
 
 # Contact
-- [pavantarunkapoor@gmail.com](mailto:your.email@example.com)
+- [pavantarunkapoor@gmail.com](mailto:pavantarunkapoor@gmail.com)
 - [Linkedin: www.linkedin.com/in/pavankap00r](www.linkedin.com/in/pavankap00r)
 
 

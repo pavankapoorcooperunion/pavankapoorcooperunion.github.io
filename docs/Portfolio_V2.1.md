@@ -99,7 +99,7 @@ table.gallery img { width:100% !important; height:auto !important; border-radius
 # Cooper Union Motorsports: Formula SAE
 
 ![Car](Images/car.png)
-#### Body/Cockpit/Safety System Assembly that I Desgined(Excluding frame)
+#### Body/Cockpit/Safety System assembly that I designed (excluding frame)
 ![Assembly](Images/ASSEM.png)
 
 ## Nosecone
@@ -154,7 +154,7 @@ table.gallery img { width:100% !important; height:auto !important; border-radius
 
 ### Materials
 
-The Firewall is made of a sandwich panel of 6 layers of 200 gsm bidirectional basalt fiber with a sheet of Nomex Honeycomb in the middle. It also has a layer of 0.64mm thick 6061 Aluminum facing the tractive system. I used Basalt because it had the highest resistivity and acceptable tensile strength. The Nomex Honeycomb adds an air gap which improves the area moment of interia and the thermal resistivity of the panel leading to greater stiffness and themral insulation without adding more layers of basalt.
+The Firewall is made of a sandwich panel of 6 layers of 200 gsm bidirectional basalt fiber with a sheet of Nomex Honeycomb in the middle. It also has a layer of 0.64mm thick 6061 Aluminum facing the tractive system. I used Basalt because it had the highest resistivity and acceptable tensile strength. The Nomex honeycomb adds an air gap that increases the area moment of inertia and the panel’s thermal resistance, improving stiffness and thermal insulation without adding more basalt layers.
 
 
 
@@ -171,7 +171,7 @@ The Firewall is made of a sandwich panel of 6 layers of 200 gsm bidirectional ba
 
 ![FW3](Firewall/FW3.png)
 
-#### Lasercut Plywood prototype
+#### Laser-cut plywood prototype
 <table style="border-collapse: collapse; border: none;">
   <tr>
     <td style="border: none;"><img src="Firewall/FWP1.JPG" alt="FWP1" width="400"/></td>
@@ -194,7 +194,7 @@ The Firewall is made of a sandwich panel of 6 layers of 200 gsm bidirectional ba
   </tr>
 </table>
 
-#### Post Processed
+#### Post-Processed
 
 ![Firewall](Firewall/FW8.JPG)
 
@@ -236,9 +236,9 @@ The Firewall is made of a sandwich panel of 6 layers of 200 gsm bidirectional ba
 
 ## Harness Tabs
 
-Harness tab was designed to be able withstand 15,000N of tearout load per tab based on rules from FSAE.
+Harness tab was designed to be able withstand 15,000 N of tear-out load per tab based on rules from FSAE.
 
-The tabs were designed to be manufactured from rectangular steel tubing so that the bolts were in double shear while being easy and efficient to manufacture since there it was milled out of correctly sized tube rather than a solid block of steel. Although 2 tabs cut from 1/8" sheet metal could have been used, it would have been very challenging to weld the inside edge of the tab as required by rules. The hardware is M12 high-strength alloy steel shouldered bolts.
+The tabs were designed to be manufactured from rectangular steel tubing so that the bolts were in double shear while being easy and efficient to manufacture since it was milled out of correctly sized tube rather than a solid block of steel. Although 2 tabs cut from 1/8" sheet metal could have been used, it would have been very challenging to weld the inside edge of the tab as required by rules. Used M12 high-strength alloy steel shouldered bolts.
 
 The factor of safety for the harness tab is 2.1.
 
@@ -260,24 +260,26 @@ The factor of safety for the harness tab is 2.1.
 #### Drivetrain Tabs Tack Welded
 ![Tacked](Drivetrain_Accum_Weld/tack.JPG)
 
-#### My Friend and I welding the Accumalator Tabs under intense time pressure
+#### My friend and I welding the accumulator Tabs under intense time pressure
 ![Accum/weld](Drivetrain_Accum_Weld/accumweld.JPG)
 
 
 
 # Computational Fluid Dynamics Projects
 
-![](CFD_Air/CAD_1.png)
+
 
 ## Axial Air Compressor for Turbofan Engine 
+![](CFD_Air/CAD_1.png)
+
 Designed and simulated a multi-stage axial compressor capable of achieving a 20:1 pressure ratio at 40,000 ft.  
 Simulations were performed in ANSYS Fluent using detailed stage-by-stage geometry and validated at both altitude and sea-level conditions.
 
 ### Design Constraints
-- Achieve 20:1 Pressure ratio
-- Maximum Altitude of 40,000'
-- Outer Diameter between 5ft and 6ft
-- Maximum RPM of any stage should be less than 50,000rpm
+- Achieve 20:1 pressure ratio
+- Maximum altitude of 40,000 ft
+- Outer diameter between 5 ft and 6 ft
+- Maximum RPM of any stage < 50,000 rpm
 
 
 ### Design parameters
@@ -365,7 +367,7 @@ Built fully Parametric CAD Model in Onshape with ability to rapidly adjust the f
 
 ### Results
 - Achieved total 20 : 1 compression ratio across 17 stages   
-- Average Stage Efficiency of 82%
+- Average stage efficiency of 82%
 - Pressure ratio and efficiency validated against hand calculations
 - Turbulence modeling, residual analysis, and mesh-independence verification  
 
@@ -413,7 +415,7 @@ Built fully Parametric CAD Model in Onshape with ability to rapidly adjust the f
 - To maximise grip we optimized two parameters, the normal force and the friction coefficient between the wheels and the ground.
 #### Ground Effect Downforce
 - The robot was built to weigh close to 5lbs. We add a fan to suck air from underneath the robot to generate downforce. The idea was to increase the normal force on the robot without exceeding the weight limit of 5lbs since the robot was weighed with the fan turned off.
-- Due to the power limitation on the fan motor, the fan did not generate a measureable amount of downforce. It was cool concept to implement regardless of its effectiveness
+- Due to the power limitation on the fan motor, the fan did not generate a measurable amount of downforce. It was a cool concept to implement regardless of its effectiveness
 
 
 ![CAD1](SUMo/CAD1.png)
@@ -438,9 +440,9 @@ Built fully Parametric CAD Model in Onshape with ability to rapidly adjust the f
 ### Overmolded Silicone Wheels
 
 - To optimize the friction coefficient between the wheels and the ground, I made custom 3D printed wheels with silicone cast tires. I used a soft durometer silicone and designed a wheel rim and mold to cast the silicone around the wheel rim.
-- Additionally I designed the chassis so that the real wheels maintained contact with the ground when the front was lifted (like with a wedge during a match). The can be seen in action in the videos below.
+- Additionally I designed the chassis so that the rear wheels maintained contact with the ground when the front was lifted (like with a wedge during a match). The can be seen in action in the videos below.
 - Initially I designed the battery to be housed in the front to make it harder to lift the front and to balance the weight distribution with the two motors in the back. 
-- But in practice the motors had too much torque and the wheels were slipping. Moving the battery to the back significantly increased the grip on the driving wheels. This made the front end easier to lift, but the trade off was worth it since the driving wheels had much more grip and maintied contact with the ground when the front was lifted.
+- But in practice the motors had too much torque and the wheels were slipping. Moving the battery to the back significantly increased the grip on the driving wheels. This made the front end easier to lift, but the trade off was worth it since the driving wheels had much more grip and maintained contact with the ground when the front was lifted.
   
 
 <table style="border-collapse: collapse; border: none;">
@@ -475,14 +477,16 @@ Built fully Parametric CAD Model in Onshape with ability to rapidly adjust the f
 
 ## Cookie Cutter Press
 
-Designed and built cookie cutter press to make a custom shape cookie cutter.
+Designed and built cookie cutter press to make a custom shape cookie cutter. My teammate and I decided to make a cookie cutter in the shape of Monza, which is a racetrack. 
 
 ### Version 2
 ![MFG](MFG/MFG_CC_V2.JPG)
 ![MFG](MFG/MFG_V2_Result.JPG)
 
+<div align="center">
 
-<video src="MFG/MFG_CC_Press_2x.mp4" autoplay loop muted playsinline width="500"  controls></video>
+<video src="MFG/MFG_CC_Press_2x.mp4" autoplay loop muted playsinline width="700"  controls></video>
+</div>
 
 ### Version 1
 ![MFG](MFG/MFG_CC_V1.JPG)

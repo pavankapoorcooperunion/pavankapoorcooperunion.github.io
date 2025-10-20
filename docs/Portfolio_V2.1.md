@@ -81,6 +81,7 @@ table.gallery img { width:100% !important; height:auto !important; border-radius
     - [Design parameters](#design-parameters)
     - [Simulation](#simulation)
     - [Results](#results)
+  - [Automotive Heat Exchanger](#automotive-heat-exchanger)
 - [Class Projects](#class-projects)
   - [Sumo Robot Project](#sumo-robot-project)
     - [Design](#design-1)
@@ -379,20 +380,29 @@ Built fully Parametric CAD Model in Onshape with ability to rapidly adjust the f
 
 | 40,000 Feet       | Inlet | Outlet | Unit |
 |----------------------|-----:|------:|:-----|
-| Ambient Pressure     |  2.7 |   103 | psi  |
-| Ambient Temperature  | -69.7|  1592 | F    |
+| Pressure     |  2.7 |   103 | psi  |
+| Temperature  | -69.7|  1592 | F    |
 <br><br>
 
 *Table 2: Performance metrics at sea level.*
 
 | Sea level        | Inlet | Outlet | Unit |
 |----------------------|-----:|------:|:-----|
-| Ambient Pressure     | 14.7 |   223 | psi  |
-| Ambient Temperature  | 59.0 |  1253 | F    |
+| Pressure     | 14.7 |   223 | psi  |
+| Temperature  | 59.0 |  1253 | F    |
 </div>
  
 <br><br>
 
+More information about this project in the [full report](https://drive.google.com/file/d/1QVX39FOOw6npelVQ_BAIDXQUUlno0JuK/view?usp=drive_link)
+<br>
+[Original Assignment](https://drive.google.com/file/d/12JTfVGm5Dggs_krdk6svhqtvWRtSXwW-/view?usp=sharing)
+
+## Automotive Heat Exchanger
+
+[Full report](https://drive.google.com/file/d/1VCqYSP_IjIPGORkPQzzPSxOdVdTBt5YO/view?usp=sharing) for reference until the project is added here.
+<br>
+[Original Assignment](https://drive.google.com/file/d/1451Hp0TVWpOrE3E7IqUipj_E0lH5_nzk/view?usp=sharing)
 
 
 # Class Projects
@@ -512,6 +522,7 @@ Designed and built cookie cutter press to make a custom shape cookie cutter. My 
 # Contact
 - [pavantarunkapoor@gmail.com](mailto:pavantarunkapoor@gmail.com)
 - [Linkedin: www.linkedin.com/in/pavankap00r](www.linkedin.com/in/pavankap00r)
+- [Resume](https://drive.google.com/file/d/1im8G8flU0TsKoPTkrHuLig8cEKztINLW/view?usp=sharing)
 
 
 

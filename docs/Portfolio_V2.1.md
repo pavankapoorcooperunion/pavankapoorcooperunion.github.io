@@ -49,6 +49,22 @@ table.gallery img { width:100% !important; height:auto !important; border-radius
   blockquote { color:#e5e7eb; background:#111827; border-left-color:#60a5fa66; }
 }
 
+.video-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;    /* Center horizontally */
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 100%;        /* Keep within page width */
+  }
+
+.video-container video {
+    width: 100%;            /* Make responsive */
+    max-width: 800px;       /* Limit size on large screens */
+    height: auto;           /* Maintain aspect ratio */
+    border-radius: 8px;     /* Optional: rounded corners */
+  }
+
 
 </style>
 
@@ -349,23 +365,22 @@ Built fully Parametric CAD Model in Onshape with ability to rapidly adjust the f
 
 #### Stage 1 Simulation
 
-<div align="center">
-
-<video src="CFD_Air/S1_press.mp4" autoplay loop muted playsinline width="600" ></video>
-
-<video src="CFD_Air/S1_temp.mp4" autoplay loop muted playsinline width="600"  ></video>
-
-<video src="CFD_Air/S1_stream.mp4" autoplay loop muted playsinline width="600" ></video>
+<div class="video-container">
+  <video src="CFD_Air/S1_press.mp4" autoplay loop muted playsinline></video>
+<br>
+  <video src="CFD_Air/S1_temp.mp4" autoplay loop muted playsinline></video>
+<br>
+  <video src="CFD_Air/S1_stream.mp4" autoplay loop muted playsinline></video>
 </div>
 
 #### Stage 4 Simulation
-<div align="center">
 
-<video src="CFD_Air/S4_press_anim.mp4" autoplay loop muted playsinline width="600" ></video>
-
-<video src="CFD_Air/S4_temp_anim.mp4" autoplay loop muted playsinline width="600" ></video>
-
-<video src="CFD_Air/s4_path_anim.mp4" autoplay loop muted playsinline width="600" ></video>
+<div class="video-container">
+  <video src="CFD_Air/S4_press_anim.mp4" autoplay loop muted playsinline></video>
+  <br>
+  <video src="CFD_Air/S4_temp_anim.mp4" autoplay loop muted playsinline></video>
+  <br>
+  <video src="CFD_Air/S4_path_anim.mp4" autoplay loop muted playsinline></video>
 </div>
 
 ### Results
@@ -505,9 +520,8 @@ Designed and built cookie cutter press to make a custom shape cookie cutter. My 
 ![MFG](MFG/MFG_CC_V2.JPG)
 ![MFG](MFG/MFG_V2_Result.JPG)
 
-<div align="center">
-
-<video src="MFG/MFG_CC_Press_2x.mp4" autoplay loop muted playsinline width="700"  controls></video>
+<div class="video-container">
+  <video src="MFG/MFG_CC_Press_2x.mp4" autoplay loop muted playsinline controls></video>
 </div>
 
 ### Version 1

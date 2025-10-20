@@ -82,6 +82,8 @@ table.gallery img { width:100% !important; height:auto !important; border-radius
     - [Simulation](#simulation)
     - [Results](#results)
   - [Automotive Heat Exchanger](#automotive-heat-exchanger)
+- [Finite Element Analysis(FEA/CAE) Projects](#finite-element-analysisfeacae-projects)
+  - [Table Design Project in APDL](#table-design-project-in-apdl)
 - [Class Projects](#class-projects)
   - [Sumo Robot Project](#sumo-robot-project)
     - [Design](#design-1)
@@ -403,6 +405,16 @@ More information about this project in the [full report](https://drive.google.co
 [Full report](https://drive.google.com/file/d/1VCqYSP_IjIPGORkPQzzPSxOdVdTBt5YO/view?usp=sharing) for reference until the project is added here.
 <br>
 [Original Assignment](https://drive.google.com/file/d/1451Hp0TVWpOrE3E7IqUipj_E0lH5_nzk/view?usp=sharing)
+
+# Finite Element Analysis(FEA/CAE) Projects
+
+## Table Design Project in APDL
+
+
+
+[Report](https://drive.google.com/file/d/1dQCCjXycUBAJTBsOkgYJsitW8fW3preJ/view?usp=sharing)
+<br>
+
 
 
 # Class Projects

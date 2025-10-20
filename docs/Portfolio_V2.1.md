@@ -534,7 +534,7 @@ Designed and built cookie cutter press to make a custom shape cookie cutter. My 
 # Contact
 - [pavantarunkapoor@gmail.com](mailto:pavantarunkapoor@gmail.com)
 - [Linkedin: www.linkedin.com/in/pavankap00r](www.linkedin.com/in/pavankap00r)
-- [Resume](https://drive.google.com/file/d/1im8G8flU0TsKoPTkrHuLig8cEKztINLW/view?usp=sharing)
+- [Resume](https://drive.google.com/file/d/1Na3Xy6BOd0DEtm0VT_4_M8vX_TSOggat/view?usp=sharing)
 
 
 

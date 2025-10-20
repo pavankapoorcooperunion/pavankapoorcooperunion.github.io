@@ -76,14 +76,14 @@ table.gallery img { width:100% !important; height:auto !important; border-radius
   - [Harness Tabs](#harness-tabs)
   - [Drivetrain \& Accumulator Mounting](#drivetrain--accumulator-mounting)
 - [Computational Fluid Dynamics Projects](#computational-fluid-dynamics-projects)
-  - [Axial Air Compressor for Turbofan Engine](#axial-air-compressor-for-turbofan-engine)
+  - [Axial Air Compressor](#axial-air-compressor)
     - [Design Constraints](#design-constraints)
     - [Design parameters](#design-parameters)
     - [Simulation](#simulation)
     - [Results](#results)
   - [Automotive Heat Exchanger](#automotive-heat-exchanger)
 - [Finite Element Analysis(FEA/CAE) Projects](#finite-element-analysisfeacae-projects)
-  - [Table Design Project in APDL](#table-design-project-in-apdl)
+  - [Table Design in APDL](#table-design-in-apdl)
 - [Class Projects](#class-projects)
   - [Sumo Robot Project](#sumo-robot-project)
     - [Design](#design-1)
@@ -272,7 +272,7 @@ The factor of safety for the harness tab is 2.1.
 
 
 
-## Axial Air Compressor for Turbofan Engine 
+## Axial Air Compressor
 ![](CFD_Air/CAD_1.png)
 
 Designed and simulated a multi-stage axial compressor capable of achieving a 20:1 pressure ratio at 40,000 ft.  
@@ -408,7 +408,7 @@ More information about this project in the [full report](https://drive.google.co
 
 # Finite Element Analysis(FEA/CAE) Projects
 
-## Table Design Project in APDL
+## Table Design in APDL
 
 
 

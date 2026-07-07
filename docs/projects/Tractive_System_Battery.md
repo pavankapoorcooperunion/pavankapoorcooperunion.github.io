@@ -70,7 +70,7 @@ table.gallery img { width:100% !important; height:auto !important; border-radius
 .back-link a { font-size: 0.9rem; text-decoration: none; }
 .back-link a:hover { text-decoration: underline; }
 </style>
-<p class="back-link"><a href="../index.html">&larr; Back to Projects</a></p>
+<p class="back-link"><a href="/">&larr; Back to Projects</a></p>
 
 
 # Tractive System Battery

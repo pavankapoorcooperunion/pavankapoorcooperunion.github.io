@@ -8,3 +8,6 @@ gems:
 toc:
     min_level: 1
     max_level: 2
+
+exclude:
+  - "**/*.md"

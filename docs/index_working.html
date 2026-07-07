@@ -1,0 +1,933 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Portfolio_V2.1.md</title>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+
+<style>
+/* https://github.com/microsoft/vscode/blob/master/extensions/markdown-language-features/media/markdown.css */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+body {
+	font-family: var(--vscode-markdown-font-family, -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif);
+	font-size: var(--vscode-markdown-font-size, 14px);
+	padding: 0 26px;
+	line-height: var(--vscode-markdown-line-height, 22px);
+	word-wrap: break-word;
+}
+
+#code-csp-warning {
+	position: fixed;
+	top: 0;
+	right: 0;
+	color: white;
+	margin: 16px;
+	text-align: center;
+	font-size: 12px;
+	font-family: sans-serif;
+	background-color:#444444;
+	cursor: pointer;
+	padding: 6px;
+	box-shadow: 1px 1px 1px rgba(0,0,0,.25);
+}
+
+#code-csp-warning:hover {
+	text-decoration: none;
+	background-color:#007acc;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.25);
+}
+
+body.scrollBeyondLastLine {
+	margin-bottom: calc(100vh - 22px);
+}
+
+body.showEditorSelection .code-line {
+	position: relative;
+}
+
+body.showEditorSelection .code-active-line:before,
+body.showEditorSelection .code-line:hover:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -12px;
+	height: 100%;
+}
+
+body.showEditorSelection li.code-active-line:before,
+body.showEditorSelection li.code-line:hover:before {
+	left: -30px;
+}
+
+.vscode-light.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.15);
+}
+
+.vscode-light.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.40);
+}
+
+.vscode-light.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-dark.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.4);
+}
+
+.vscode-dark.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.60);
+}
+
+.vscode-dark.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-high-contrast.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 160, 0, 0.7);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 160, 0, 1);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:focus,
+input:focus,
+select:focus,
+textarea:focus {
+	outline: 1px solid -webkit-focus-ring-color;
+	outline-offset: -1px;
+}
+
+hr {
+	border: 0;
+	height: 2px;
+	border-bottom: 2px solid;
+}
+
+h1 {
+	padding-bottom: 0.3em;
+	line-height: 1.2;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+
+h1, h2, h3 {
+	font-weight: normal;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table > thead > tr > th {
+	text-align: left;
+	border-bottom: 1px solid;
+}
+
+table > thead > tr > th,
+table > thead > tr > td,
+table > tbody > tr > th,
+table > tbody > tr > td {
+	padding: 5px 10px;
+}
+
+table > tbody > tr + tr > td {
+	border-top: 1px solid;
+}
+
+blockquote {
+	margin: 0 7px 0 5px;
+	padding: 0 16px 0 10px;
+	border-left-width: 5px;
+	border-left-style: solid;
+}
+
+code {
+	font-family: Menlo, Monaco, Consolas, "Droid Sans Mono", "Courier New", monospace, "Droid Sans Fallback";
+	font-size: 1em;
+	line-height: 1.357em;
+}
+
+body.wordWrap pre {
+	white-space: pre-wrap;
+}
+
+pre:not(.hljs),
+pre.hljs code > div {
+	padding: 16px;
+	border-radius: 3px;
+	overflow: auto;
+}
+
+pre code {
+	color: var(--vscode-editor-foreground);
+	tab-size: 4;
+}
+
+/** Theming */
+
+.vscode-light pre {
+	background-color: rgba(220, 220, 220, 0.4);
+}
+
+.vscode-dark pre {
+	background-color: rgba(10, 10, 10, 0.4);
+}
+
+.vscode-high-contrast pre {
+	background-color: rgb(0, 0, 0);
+}
+
+.vscode-high-contrast h1 {
+	border-color: rgb(0, 0, 0);
+}
+
+.vscode-light table > thead > tr > th {
+	border-color: rgba(0, 0, 0, 0.69);
+}
+
+.vscode-dark table > thead > tr > th {
+	border-color: rgba(255, 255, 255, 0.69);
+}
+
+.vscode-light h1,
+.vscode-light hr,
+.vscode-light table > tbody > tr + tr > td {
+	border-color: rgba(0, 0, 0, 0.18);
+}
+
+.vscode-dark h1,
+.vscode-dark hr,
+.vscode-dark table > tbody > tr + tr > td {
+	border-color: rgba(255, 255, 255, 0.18);
+}
+
+</style>
+
+<style>
+/* Tomorrow Theme */
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+/* Original theme - https://github.com/chriskempson/tomorrow-theme */
+
+/* Tomorrow Comment */
+.hljs-comment,
+.hljs-quote {
+	color: #8e908c;
+}
+
+/* Tomorrow Red */
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-regexp,
+.hljs-deletion {
+	color: #c82829;
+}
+
+/* Tomorrow Orange */
+.hljs-number,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-literal,
+.hljs-type,
+.hljs-params,
+.hljs-meta,
+.hljs-link {
+	color: #f5871f;
+}
+
+/* Tomorrow Yellow */
+.hljs-attribute {
+	color: #eab700;
+}
+
+/* Tomorrow Green */
+.hljs-string,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-addition {
+	color: #718c00;
+}
+
+/* Tomorrow Blue */
+.hljs-title,
+.hljs-section {
+	color: #4271ae;
+}
+
+/* Tomorrow Purple */
+.hljs-keyword,
+.hljs-selector-tag {
+	color: #8959a8;
+}
+
+.hljs {
+	display: block;
+	overflow-x: auto;
+	color: #4d4d4c;
+	padding: 0.5em;
+}
+
+.hljs-emphasis {
+	font-style: italic;
+}
+
+.hljs-strong {
+	font-weight: bold;
+}
+</style>
+
+<style>
+/*
+ * Markdown PDF CSS
+ */
+
+ body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif, "Meiryo";
+	padding: 0 12px;
+}
+
+pre {
+	background-color: #f8f8f8;
+	border: 1px solid #cccccc;
+	border-radius: 3px;
+	overflow-x: auto;
+	white-space: pre-wrap;
+	overflow-wrap: break-word;
+}
+
+pre:not(.hljs) {
+	padding: 23px;
+	line-height: 19px;
+}
+
+blockquote {
+	background: rgba(127, 127, 127, 0.1);
+	border-color: rgba(0, 122, 204, 0.5);
+}
+
+.emoji {
+	height: 1.4em;
+}
+
+code {
+	font-size: 14px;
+	line-height: 19px;
+}
+
+/* for inline code */
+:not(pre):not(.hljs) > code {
+	color: #C9AE75; /* Change the old color so it seems less like an error */
+	font-size: inherit;
+}
+
+/* Page Break : use <div class="page"/> to insert page break
+-------------------------------------------------------- */
+.page {
+	page-break-after: always;
+}
+
+</style>
+
+<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+</head>
+<body>
+  <script>
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: document.body.classList.contains('vscode-dark') || document.body.classList.contains('vscode-high-contrast')
+          ? 'dark'
+          : 'default'
+    });
+  </script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<script>
+  document.title = "Pavan Kapoor — Portfolio";
+</script>
+<style>
+/* Compact centered layout */
+body { max-width: 720px; margin: 24px auto 72px; padding: 0 16px; font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; color:#0f172a; }
+h1,h2{border-bottom:2px solid #e5e7eb;padding-bottom:.3em}
+img { display:block; margin:10px auto; max-width:100% !important; height:auto !important; border-radius:4px; }
+
+/* Table-based gallery that doesn't rely on CSS grid support */
+table.gallery { width:100%; border-collapse:collapse; margin:12px 0; }
+table.gallery td { padding:6px; border:none; text-align:center; vertical-align:top; }
+table.gallery img { width:100% !important; height:auto !important; border-radius:6px; }
+
+
+/* --- dark mode overrides --- */
+@media (prefers-color-scheme: dark) {
+  html, body { background:#242424 ; color:#e5e7eb; }
+  h1,h2,h3,h4,h5,h6 { color:#f8fafc; }
+  a { color:#60a5fa; }
+  a:visited { color:#93c5fd; }
+  a:hover, a:focus { color:#bfdbfe; }
+
+  figcaption, small, .muted { color:#94a3b8; }
+  h1, h2 {
+    border-bottom: 2px solid #7a7a7a !important;  /* try #4a4a4a, #585858, or #6b6b6b */
+    padding-bottom: .35em !important;
+  }
+  hr {
+    background: #4a4a4a !important;
+    height: 2px; border: 0;
+  }
+
+  /* code */
+  pre { background:#0f172a; border:1px solid #1f2937; }
+  :not(pre)>code { color:#e5e7eb; background:#0f172a; border:1px solid #1f2937; }
+
+  /* tables / gallery text */
+  table td, table th { color:#e5e7eb; }
+
+  /* blockquote */
+  blockquote { color:#e5e7eb; background:#111827; border-left-color:#60a5fa66; }
+}
+
+.video-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;    /* Center horizontally */
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 100%;        /* Keep within page width */
+  }
+
+.video-container video {
+    width: 100%;            /* Make responsive */
+    max-width: 800px;       /* Limit size on large screens */
+    height: auto;           /* Maintain aspect ratio */
+    border-radius: 8px;     /* Optional: rounded corners */
+  }
+
+
+</style>
+<h1 id="pavan-kapoor-mechanical-engineering-portfolio">Pavan Kapoor: Mechanical Engineering Portfolio</h1>
+<ul>
+<li><a href="#pavan-kapoor-mechanical-engineering-portfolio">Pavan Kapoor: Mechanical Engineering Portfolio</a></li>
+<li><a href="#cooper-union-motorsports-formula-sae">Cooper Union Motorsports: Formula SAE</a>
+<ul>
+<li><a href="#nosecone">Nosecone</a>
+<ul>
+<li><a href="#mold-manufacturing">Mold Manufacturing</a></li>
+<li><a href="#infusion-layup-setup">Infusion Layup Setup</a></li>
+<li><a href="#resin-infusion">Resin Infusion</a></li>
+<li><a href="#post-processing">Post-Processing</a></li>
+<li><a href="#post-vinyl">Post-Vinyl</a></li>
+</ul>
+</li>
+<li><a href="#firewall-electrically-and-thermally-insulative-ballistically-protective">Firewall: Electrically and Thermally Insulative, Ballistically Protective</a>
+<ul>
+<li><a href="#materials">Materials</a></li>
+<li><a href="#design">Design</a></li>
+<li><a href="#lower-firewall-manufacturing">Lower Firewall Manufacturing</a></li>
+<li><a href="#upper-firewall-manufacturing">Upper Firewall Manufacturing</a></li>
+</ul>
+</li>
+<li><a href="#anti-intrusion-plate-and-impact-attenuator">Anti-Intrusion Plate and Impact Attenuator</a>
+<ul>
+<li><a href="#aip-welding">AIP Welding</a></li>
+<li><a href="#impact-attenuator-adhesion">Impact Attenuator Adhesion</a></li>
+</ul>
+</li>
+<li><a href="#harness-tabs">Harness Tabs</a></li>
+<li><a href="#drivetrain--accumulator-mounting">Drivetrain &amp; Accumulator Mounting</a></li>
+</ul>
+</li>
+<li><a href="#computational-fluid-dynamics-projects">Computational Fluid Dynamics Projects</a>
+<ul>
+<li><a href="#axial-air-compressor">Axial Air Compressor</a>
+<ul>
+<li><a href="#design-constraints">Design Constraints</a></li>
+<li><a href="#design-parameters">Design parameters</a></li>
+<li><a href="#simulation">Simulation</a></li>
+<li><a href="#results">Results</a></li>
+</ul>
+</li>
+<li><a href="#automotive-heat-exchanger">Automotive Heat Exchanger</a></li>
+</ul>
+</li>
+<li><a href="#finite-element-analysisfeacae-projects">Finite Element Analysis(FEA/CAE) Projects</a>
+<ul>
+<li><a href="#table-design-in-apdl">Table Design in APDL</a></li>
+</ul>
+</li>
+<li><a href="#class-projects">Class Projects</a>
+<ul>
+<li><a href="#sumo-robot-project">Sumo Robot Project</a>
+<ul>
+<li><a href="#design-1">Design</a></li>
+<li><a href="#test-prints">Test prints</a></li>
+<li><a href="#3d-printed-chassis">3D Printed Chassis</a></li>
+<li><a href="#overmolded-silicone-wheels">Overmolded Silicone Wheels</a></li>
+<li><a href="#final-robot">Final Robot</a></li>
+</ul>
+</li>
+<li><a href="#cookie-cutter-press">Cookie Cutter Press</a>
+<ul>
+<li><a href="#version-2">Version 2</a></li>
+<li><a href="#version-1">Version 1</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#cnc-machining-projects">CNC Machining Projects</a>
+<ul>
+<li><a href="#name-plate-engraving">Name Plate Engraving</a></li>
+<li><a href="#isogrid-coaster">Isogrid Coaster</a></li>
+</ul>
+</li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+<h1 id="cooper-union-motorsports-formula-sae">Cooper Union Motorsports: Formula SAE</h1>
+<p><img src="Images/car.png" alt="Car"></p>
+<h4 id="bodycockpitsafety-system-assembly-that-i-designed-excluding-frame">Body/Cockpit/Safety System assembly that I designed (excluding frame)</h4>
+<p><img src="Images/ASSEM.png" alt="Assembly"></p>
+<h2 id="nosecone">Nosecone</h2>
+<h3 id="mold-manufacturing">Mold Manufacturing</h3>
+<table style="border-collapse: collapse; border: none;">
+  <tr>
+    <td style="border: none;"><img src="Nosecone/NC1.JPG" alt="NC1" width="400"/></td>
+    <td style="border: none;"><img src="Nosecone/NC2.JPG" alt="NC2" width="400"/></td>
+  </tr>
+  <tr>
+    <td style="border: none;"><img src="Nosecone/NC3.JPG" alt="NC3" width="400"/></td>
+    <td style="border: none;"><img src="Nosecone/NC4.JPG" alt="NC4" width="400"/></td>
+  </tr>
+</table>
+<h3 id="infusion-layup-setup">Infusion Layup Setup</h3>
+<table style="border-collapse: collapse; border: none;">
+  <tr>
+    <td style="border: none;"><img src="Nosecone/NC5.JPG" alt="NC5" width="400"/></td>
+    <td style="border: none;"><img src="Nosecone/NC6.JPG" alt="NC6" width="400"/></td>
+  </tr>
+</table>
+<h3 id="resin-infusion">Resin Infusion</h3>
+<table style="border-collapse: collapse; border: none;">
+  <tr>
+    <td style="border: none;"><img src="Nosecone/NC7.JPG" alt="NC7" width="400"/></td>
+    <td style="border: none;"><img src="Nosecone/NC8.JPG" alt="NC8" width="400"/></td>
+  </tr>
+</table>
+<h3 id="post-processing">Post-Processing</h3>
+<table style="border-collapse: collapse; border: none;">
+  <tr>
+    <td style="border: none;"><img src="Nosecone/NC9.JPG" alt="NC9" width="400"/></td>
+    <td style="border: none;"><img src="Nosecone/NC10.JPG" alt="NC10" width="400"/></td>
+  </tr>
+</table>
+<p><img src="Nosecone/NC11.JPG" alt="NC11"></p>
+<h3 id="post-vinyl">Post-Vinyl</h3>
+<p><img src="Nosecone/NC12.JPG" alt="NC12"></p>
+<h2 id="firewall-electrically-and-thermally-insulative-ballistically-protective">Firewall: Electrically and Thermally Insulative, Ballistically Protective</h2>
+<h3 id="materials">Materials</h3>
+<p>The Firewall is made of a sandwich panel of 6 layers of 200 gsm bidirectional basalt fiber with a sheet of Nomex Honeycomb in the middle. It also has a layer of 0.64mm thick 6061 Aluminum facing the tractive system. I used Basalt because it had the highest resistivity and acceptable tensile strength. The Nomex honeycomb adds an air gap that increases the area moment of inertia and the panel’s thermal resistance, improving stiffness and thermal insulation without adding more basalt layers.</p>
+<h3 id="design">Design</h3>
+<h4 id="cad">CAD</h4>
+<table style="border-collapse: collapse; border: none;">
+  <tr>
+    <td style="border: none;"><img src="Firewall/FW1.png" alt="FW1" width="400"/></td>
+    <td style="border: none;"><img src="Firewall/FW2.png" alt="FW2" width="400"/></td>
+  </tr>
+</table>
+<p><img src="Firewall/FW3.png" alt="FW3"></p>
+<h4 id="laser-cut-plywood-prototype">Laser-cut plywood prototype</h4>
+<table style="border-collapse: collapse; border: none;">
+  <tr>
+    <td style="border: none;"><img src="Firewall/FWP1.JPG" alt="FWP1" width="400"/></td>
+    <td style="border: none;"><img src="Firewall/FWP2.JPG" alt="FWP2" width="400"/></td>
+  </tr>
+  <tr>
+    <td colspan="2" style="border: none; text-align: center;"><img src="Firewall/FWP3.JPG" alt="FWP1" width="400"/></td>
+  </tr>
+</table>
+<h3 id="lower-firewall-manufacturing">Lower Firewall Manufacturing</h3>
+<table style="border-collapse: collapse; border: none;">
+  <tr>
+    <td style="border: none;"><img src="Firewall/FW4.JPG" alt="FW4" width="400"/></td>
+    <td style="border: none;"><img src="Firewall/FW5.jpeg" alt="FW5" width="400"/></td>
+  </tr>
+  <tr>
+    <td style="border: none;"><img src="Firewall/FW6.jpeg" alt="FW6" width="400"/></td>
+    <td style="border: none;"><img src="Firewall/FW7.JPG" alt="FW7" width="400"/></td>
+  </tr>
+</table>
+<h4 id="post-processed">Post-Processed</h4>
+<p><img src="Firewall/FW8.JPG" alt="Firewall"></p>
+<h3 id="upper-firewall-manufacturing">Upper Firewall Manufacturing</h3>
+<table style="border-collapse: collapse; border: none;">
+  <tr>
+    <td style="border: none;"><img src="Firewall/UFW_1.JPG" alt="UFW1" width="400"/></td>
+    <td style="border: none;"><img src="Firewall/UFW_2.JPG" alt="UFW2" width="400"/></td>
+  </tr>
+  <tr>
+    <td style="border: none;"><img src="Firewall/UFW_3.JPG" alt="UFW3" width="400"/></td>
+    <td style="border: none;"><img src="Firewall/UFW4.JPG" alt="UFW4" width="400"/></td>
+  </tr>
+</table>
+<h4 id="post-processed">Post Processed</h4>
+<p><img src="Firewall/UFW5.JPG" alt="UF4"></p>
+<hr>
+<h2 id="anti-intrusion-plate-and-impact-attenuator">Anti-Intrusion Plate and Impact Attenuator</h2>
+<h3 id="aip-welding">AIP Welding</h3>
+<table style="border-collapse: collapse; border: none;">
+  <tr>
+    <td style="border: none;"><img src="IA_AIP/IA1.JPG" alt="FWP1" width="400"/></td>
+    <td style="border: none;"><img src="IA_AIP/IA2.JPG" alt="FWP2" width="400"/></td>
+  </tr>
+</table>
+<h3 id="impact-attenuator-adhesion">Impact Attenuator Adhesion</h3>
+<p><img src="IA_AIP/AIP.JPG" alt="AIP"></p>
+<hr>
+<h2 id="harness-tabs">Harness Tabs</h2>
+<p>Harness tab was designed to be able to withstand 15,000 N of tear-out load per tab based on rules from FSAE.</p>
+<p>The tabs were designed to be manufactured from rectangular steel tubing so that the bolts were in double shear while being easy and efficient to manufacture since it was milled out of correctly sized tube rather than a solid block of steel. Although 2 tabs cut from 1/8&quot; sheet metal could have been used, it would have been very challenging to weld the inside edge of the tab as required by rules. Used M12 high-strength alloy steel shouldered bolts.</p>
+<p>The factor of safety for the harness tab is 2.1.</p>
+<table style="border-collapse: collapse; border: none;">
+  <tr>
+    <td style="border: none;"><img src="Harness/harness1.jpg" alt="HR1" width="400"/></td>
+    <td style="border: none;"><img src="Harness/harness4.png" alt="HR4" width="400"/></td>
+  </tr>
+  <tr>
+    <td colspan="2" style="border: none; text-align: center;"><img src="Harness/harness2.png" alt="HR2" width="500"/></td>
+  </tr>
+</table>
+<h2 id="drivetrain--accumulator-mounting">Drivetrain &amp; Accumulator Mounting</h2>
+<h4 id="drivetrain-mounting-fixture">Drivetrain Mounting Fixture</h4>
+<p><img src="Drivetrain_Accum_Weld/fixture.JPG" alt="Fixture"></p>
+<h4 id="drivetrain-tabs-tack-welded">Drivetrain Tabs Tack Welded</h4>
+<p><img src="Drivetrain_Accum_Weld/tack.JPG" alt="Tacked"></p>
+<h4 id="my-friend-and-i-welding-the-accumulator-tabs-under-intense-time-pressure">My friend and I welding the accumulator Tabs under intense time pressure</h4>
+<p><img src="Drivetrain_Accum_Weld/accumweld.JPG" alt="Accum/weld"></p>
+<h1 id="computational-fluid-dynamics-projects">Computational Fluid Dynamics Projects</h1>
+<h2 id="axial-air-compressor">Axial Air Compressor</h2>
+<p><img src="CFD_Air/CAD_1.png" alt=""></p>
+<p>Designed and simulated a multi-stage axial compressor capable of achieving a 20:1 pressure ratio at 40,000 ft.<br>
+Simulations were performed in ANSYS Fluent using detailed stage-by-stage geometry and validated at both altitude and sea-level conditions.</p>
+<h3 id="design-constraints">Design Constraints</h3>
+<ul>
+<li>Achieve 20:1 pressure ratio</li>
+<li>Maximum altitude of 40,000 ft</li>
+<li>Outer diameter between 5 ft and 6 ft</li>
+<li>Maximum RPM of any stage &lt; 50,000 rpm</li>
+</ul>
+<h3 id="design-parameters">Design parameters</h3>
+<div align="center">
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th style="text-align:right">Value</th>
+<th style="text-align:left">Unit</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Rotational speed</td>
+<td style="text-align:right">2500</td>
+<td style="text-align:left">rpm</td>
+</tr>
+<tr>
+<td>Outer Diameter</td>
+<td style="text-align:right">5.96</td>
+<td style="text-align:left">ft</td>
+</tr>
+<tr>
+<td>Length</td>
+<td style="text-align:right">23.4</td>
+<td style="text-align:left">ft</td>
+</tr>
+<tr>
+<td>Maximum blade length</td>
+<td style="text-align:right">25.8</td>
+<td style="text-align:left">in</td>
+</tr>
+<tr>
+<td>Minimum blade length</td>
+<td style="text-align:right">3.2</td>
+<td style="text-align:left">in</td>
+</tr>
+<tr>
+<td>Dry Mass</td>
+<td style="text-align:right">11000</td>
+<td style="text-align:left">lbm</td>
+</tr>
+<tr>
+<td>Blade/Vane shape</td>
+<td style="text-align:right">NACA 9506</td>
+<td style="text-align:left">-</td>
+</tr>
+<tr>
+<td>Power at 40k</td>
+<td style="text-align:right">1087</td>
+<td style="text-align:left">HP</td>
+</tr>
+<tr>
+<td>Compression Ratio 40K</td>
+<td style="text-align:right">22</td>
+<td style="text-align:left">—</td>
+</tr>
+<tr>
+<td>Power at STP</td>
+<td style="text-align:right">4902</td>
+<td style="text-align:left">HP</td>
+</tr>
+<tr>
+<td>Compression Ratio STP</td>
+<td style="text-align:right">22</td>
+<td style="text-align:left">—</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><br><br></p>
+<h4 id="hand-calculations">Hand Calculations</h4>
+<p><img src="CFD_Air/Air_comp_hand.png" alt="alt text"></p>
+<p>Stage-wise hand calculation to determine stage inlet &amp; outlet area and angles of attack for rotors &amp; stators required to meet the design criteria.</p>
+<h4 id="parametric-cad-model">Parametric CAD model</h4>
+<p>Built fully Parametric CAD Model in Onshape with ability to rapidly adjust the following design parameters for each stage:</p>
+<ul>
+<li>Stage inlet and outlet area</li>
+<li>Rotor and stator
+<ul>
+<li>number of blades</li>
+<li>chord</li>
+<li>camber</li>
+<li>angle of attack at base and tip</li>
+</ul>
+</li>
+</ul>
+<p><img src="CFD_Air/CAD_4.png" alt="CAD1"></p>
+<table style="border-collapse: collapse; border: none;">
+  <tr>
+    <td style="border: none;"><img src="CFD_Air/CAD_1.png" alt="wheel1" width="400"/></td>
+    <td style="border: none;"><img src="CFD_Air/CAD_7.png" alt="wheel2" width="400"/></td>
+  </tr>
+  <tr>
+    <td style="border: none;"><img src="CFD_Air/CAD_2.png" alt="wheel3" width="400"/></td>
+    <td style="border: none;"><img src="CFD_Air/CAD_6.png" alt="wheel4" width="400"/></td>
+  </tr>
+</table>
+<h3 id="simulation">Simulation</h3>
+<h4 id="mesh">Mesh</h4>
+<h5 id="stage-1-mesh">Stage 1 Mesh</h5>
+<p><img src="CFD_Air/mesh_aspect.png" alt="Mesh">
+<img src="CFD_Air/mesheq.png" alt="Mesh"></p>
+<h4 id="stage-1-simulation">Stage 1 Simulation</h4>
+<div class="video-container">
+  <video src="CFD_Air/S1_press.mp4" autoplay loop muted playsinline></video>
+<br>
+  <video src="CFD_Air/S1_temp.mp4" autoplay loop muted playsinline></video>
+<br>
+  <video src="CFD_Air/S1_stream.mp4" autoplay loop muted playsinline></video>
+</div>
+<h4 id="stage-4-simulation">Stage 4 Simulation</h4>
+<div class="video-container">
+  <video src="CFD_Air/S4_press_anim.mp4" autoplay loop muted playsinline></video>
+  <br>
+  <video src="CFD_Air/S4_temp_anim.mp4" autoplay loop muted playsinline></video>
+  <br>
+  <video src="CFD_Air/S4_path_anim.mp4" autoplay loop muted playsinline></video>
+</div>
+<h3 id="results">Results</h3>
+<ul>
+<li>Achieved total 20 : 1 compression ratio across 17 stages</li>
+<li>Average stage efficiency of 82%</li>
+<li>Pressure ratio and efficiency validated against hand calculations</li>
+<li>Turbulence modeling, residual analysis, and mesh-independence verification</li>
+</ul>
+<div align="center">
+<br><br>
+<p><em>Table 1: Performance metrics for maximum operating altitude.</em></p>
+<table>
+<thead>
+<tr>
+<th>40,000 Feet</th>
+<th style="text-align:right">Inlet</th>
+<th style="text-align:right">Outlet</th>
+<th style="text-align:left">Unit</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Pressure</td>
+<td style="text-align:right">2.7</td>
+<td style="text-align:right">103</td>
+<td style="text-align:left">psi</td>
+</tr>
+<tr>
+<td>Temperature</td>
+<td style="text-align:right">-69.7</td>
+<td style="text-align:right">1592</td>
+<td style="text-align:left">F</td>
+</tr>
+</tbody>
+</table>
+<p><br><br></p>
+<p><em>Table 2: Performance metrics at sea level.</em></p>
+<table>
+<thead>
+<tr>
+<th>Sea level</th>
+<th style="text-align:right">Inlet</th>
+<th style="text-align:right">Outlet</th>
+<th style="text-align:left">Unit</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Pressure</td>
+<td style="text-align:right">14.7</td>
+<td style="text-align:right">223</td>
+<td style="text-align:left">psi</td>
+</tr>
+<tr>
+<td>Temperature</td>
+<td style="text-align:right">59.0</td>
+<td style="text-align:right">1253</td>
+<td style="text-align:left">F</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><br><br></p>
+<p>More information about this project in the <a href="https://drive.google.com/file/d/1QVX39FOOw6npelVQ_BAIDXQUUlno0JuK/view?usp=drive_link">full report</a>
+<br>
+<a href="https://drive.google.com/file/d/12JTfVGm5Dggs_krdk6svhqtvWRtSXwW-/view?usp=sharing">Original Assignment</a></p>
+<h2 id="automotive-heat-exchanger">Automotive Heat Exchanger</h2>
+<p><a href="https://drive.google.com/file/d/1VCqYSP_IjIPGORkPQzzPSxOdVdTBt5YO/view?usp=sharing">Full report</a> for reference until the project is added here.
+<br>
+<a href="https://drive.google.com/file/d/1451Hp0TVWpOrE3E7IqUipj_E0lH5_nzk/view?usp=sharing">Original Assignment</a></p>
+<h1 id="finite-element-analysisfeacae-projects">Finite Element Analysis(FEA/CAE) Projects</h1>
+<h2 id="table-design-in-apdl">Table Design in APDL</h2>
+<p><a href="https://drive.google.com/file/d/1dQCCjXycUBAJTBsOkgYJsitW8fW3preJ/view?usp=sharing">Report</a>
+<br></p>
+<h1 id="class-projects">Class Projects</h1>
+<h2 id="sumo-robot-project">Sumo Robot Project</h2>
+<h3 id="design">Design</h3>
+<h4 id="design-constraints">Design Constraints</h4>
+<ul>
+<li>10&quot;x 10&quot; x 5&quot; size constraint</li>
+<li>Cost under $200</li>
+<li>Total weight under 5lbs</li>
+<li>3A max stall current for all motors</li>
+<li>14V maximum battery</li>
+<li>Only using ATMega328P</li>
+</ul>
+<h4 id="design-methodology">Design Methodology</h4>
+<ul>
+<li>The plan was to maximise grip on the drive wheels. The stall current limitation likely meant most motors would similar torque specs, hence weight and grip would drive which robot would resist pushing.</li>
+<li>To maximise grip we optimized two parameters, the normal force and the friction coefficient between the wheels and the ground.</li>
+</ul>
+<h4 id="ground-effect-downforce">Ground Effect Downforce</h4>
+<ul>
+<li>The robot was built to weigh close to 5lbs. We add a fan to suck air from underneath the robot to generate downforce. The idea was to increase the normal force on the robot without exceeding the weight limit of 5lbs since the robot was weighed with the fan turned off.</li>
+<li>Due to the power limitation on the fan motor, the fan did not generate a measurable amount of downforce. It was a cool concept to implement regardless of its effectiveness</li>
+</ul>
+<p><img src="SUMo/CAD1.png" alt="CAD1">
+<img src="SUMo/CAD2.png" alt="CAD2"></p>
+<h3 id="test-prints">Test prints</h3>
+<table style="border-collapse: collapse; border: none;">
+  <tr>
+    <td style="border: none;"><img src="SUMo/test1.JPG" alt="wheel1" width="400"/></td>
+    <td style="border: none;"><img src="SUMo/test2.JPG" alt="wheel2" width="400"/></td>
+  </tr>
+</table>
+<h3 id="3d-printed-chassis">3D Printed Chassis</h3>
+<p><img src="SUMo/Printvid.gif" alt="print"></p>
+<h3 id="overmolded-silicone-wheels">Overmolded Silicone Wheels</h3>
+<ul>
+<li>To optimize the friction coefficient between the wheels and the ground, I made custom 3D printed wheels with silicone cast tires. I used a soft durometer silicone and designed a wheel rim and mold to cast the silicone around the wheel rim.</li>
+<li>Additionally I designed the chassis so that the rear wheels maintained contact with the ground when the front was lifted (like with a wedge during a match). This can be seen in action in the videos below.</li>
+<li>Initially I designed the battery to be housed in the front to make it harder to lift the front and to balance the weight distribution with the two motors in the back.</li>
+<li>However, in practice the motors had too much torque and the wheels were slipping. Moving the battery to the back significantly increased the grip on the driving wheels. This made the front end easier to lift, but the trade off was worth it since the driving wheels had much more grip and maintained contact with the ground when the front was lifted.</li>
+</ul>
+<table style="border-collapse: collapse; border: none;">
+  <tr>
+    <td style="border: none;"><img src="SUMo/Wheel1.JPG" alt="wheel1" width="400"/></td>
+    <td style="border: none;"><img src="SUMo/Wheel2.JPG" alt="wheel2" width="400"/></td>
+  </tr>
+  <tr>
+    <td style="border: none;"><img src="SUMo/Wheel3.JPG" alt="wheel3" width="400"/></td>
+    <td style="border: none;"><img src="SUMo/Wheel4.JPG" alt="wheel4" width="400"/></td>
+  </tr>
+</table>
+<p><img src="SUMo/Wheel5.JPG" alt="final_wheel"></p>
+<h3 id="final-robot">Final Robot</h3>
+<table style="border-collapse: collapse; border: none;">
+  <tr>
+    <td style="border: none;"><img src="SUMo/top2.jpeg" alt="FWP1" width="400"/></td>
+    <td style="border: none;"><img src="SUMo/Iso.jpeg" alt="FWP2" width="400"/></td>
+  </tr>
+ <tr>
+ <tr>
+    <td colspan="2" style="border: none; text-align: center;"><img src="SUMo/back.jpeg" alt="FWP1" width="400"/></td>
+  </tr>
+  </tr>
+</table>
+<p><img src="SUMo/Match2.gif" alt="final_right">
+<img src="SUMo/match_3.gif" alt="Match3"></p>
+<h2 id="cookie-cutter-press">Cookie Cutter Press</h2>
+<p>Designed and built cookie cutter press to make a custom shape cookie cutter. My teammate and I decided to make a cookie cutter in the shape of Monza, which is a racetrack.</p>
+<h3 id="version-2">Version 2</h3>
+<p><img src="MFG/MFG_CC_V2.JPG" alt="MFG">
+<img src="MFG/MFG_V2_Result.JPG" alt="MFG"></p>
+<div class="video-container">
+  <video src="MFG/MFG_CC_Press_2x.mp4" autoplay loop muted playsinline controls></video>
+</div>
+<h3 id="version-1">Version 1</h3>
+<p><img src="MFG/MFG_CC_V1.JPG" alt="MFG">
+<img src="MFG/MFG_CC_V1_result.JPG" alt="MFG"></p>
+<h1 id="cnc-machining-projects">CNC Machining Projects</h1>
+<h2 id="name-plate-engraving">Name Plate Engraving</h2>
+<p><img src="CNC/NP1.JPG" alt="NP1">
+<img src="CNC/NP2.JPG" alt="NP2">
+<img src="CNC/NP3.JPG" alt="NP3"></p>
+<h2 id="isogrid-coaster">Isogrid Coaster</h2>
+<p><img src="CNC/ALU_C1.JPG" alt="AlU_C1">
+<img src="CNC/CNC_VID.gif" alt="AlU_CVid">
+<img src="CNC/ALU_C2.JPG" alt="AlU_C2">
+<img src="CNC/ALU_C3.JPG" alt="AlU_C3"></p>
+<hr>
+<h1 id="contact">Contact</h1>
+<ul>
+<li>
+<p><a href="mailto:pavantarunkapoor@gmail.com">pavantarunkapoor@gmail.com</a></p>
+</li>
+<li>
+<p><a href="https://www.linkedin.com/in/pavankap00r/" target="_blank" rel="noopener noreferrer">LinkedIn: www.linkedin.com/in/pavankap00r</a></p>
+</li>
+<li>
+<p><a href="https://drive.google.com/file/d/1Na3Xy6BOd0DEtm0VT_4_M8vX_TSOggat/view?usp=sharing" target="_blank" rel="noopener noreferrer">Resume</a></p>
+</li>
+</ul>
+
+</body>
+</html>

@@ -1,0 +1,402 @@
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+
+<script>
+  document.title = "Pavan Kapoor — Projects";
+</script>
+
+<style>
+:root {
+  --bg: #fafafa;
+  --surface: #ffffff;
+  --border: #e5e7eb;
+  --text: #0f172a;
+  --muted: #64748b;
+  --accent: #2563eb;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+  --bg: #18181b;
+  --surface: #212126;
+  --border: #333338;
+  --text: #f1f5f9;
+  --muted: #9299a8;
+  --accent: #7aa2ff;
+  }
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  background: var(--bg);
+  color: var(--text);
+}
+
+body {
+  max-width: 880px;
+  margin: 0 auto;
+  padding: 40px 24px 96px;
+  font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ---------- hero ---------- */
+.hero {
+  margin-bottom: 56px;
+}
+
+.hero .eyebrow {
+  display: inline-block;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin: 0 0 10px;
+}
+
+.hero h1 {
+  margin: 0 0 10px;
+  font-size: clamp(2rem, 5vw, 2.75rem);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.15;
+}
+
+.hero p.tagline {
+  margin: 0;
+  font-size: 1.05rem;
+  color: var(--muted);
+  max-width: 56ch;
+}
+
+/* ---------- category sections ---------- */
+section.cat {
+  margin: 0 0 48px;
+}
+
+.cat-head {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  margin-bottom: 18px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--border);
+}
+
+.cat-head .cat-dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  flex: 0 0 auto;
+  transform: translateY(-1px);
+}
+
+.cat-head h2 {
+  margin: 0;
+  font-size: 1.05rem;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+}
+
+.cat-head .count {
+  margin-left: auto;
+  font-size: 0.8rem;
+  color: var(--muted);
+  font-variant-numeric: tabular-nums;
+}
+
+/* ---------- card grid ---------- */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 14px;
+}
+
+a.card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: var(--surface);
+  text-decoration: none;
+  color: var(--text);
+  overflow: hidden;
+  transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
+}
+
+a.card:hover, a.card:focus {
+  transform: translateY(-2px);
+  border-color: var(--accent);
+  box-shadow: 0 8px 20px -8px rgba(0,0,0,0.18);
+}
+
+.card-img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+  background: var(--border);
+  margin: 0;
+  border-radius: 0;
+}
+
+.card-body {
+  padding: 14px 16px;
+}
+
+a.card h3 {
+  margin: 0 0 6px;
+  font-size: 0.98rem;
+  font-weight: 600;
+}
+
+a.card h3::after {
+  content: "→";
+  display: inline-block;
+  margin-left: 6px;
+  color: var(--accent);
+  opacity: 0;
+  transform: translateX(-4px);
+  transition: opacity 0.15s ease, transform 0.15s ease;
+}
+
+a.card:hover h3::after, a.card:focus h3::after {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+a.card p {
+  margin: 0;
+  font-size: 0.85rem;
+  line-height: 1.5;
+  color: var(--muted);
+}
+
+a.card p:empty {
+  display: none;
+}
+
+.empty-note {
+  font-size: 0.9rem;
+  color: var(--muted);
+  font-style: italic;
+  margin: 0;
+}
+
+/* ---------- footer / contact ---------- */
+footer.contact {
+  margin-top: 64px;
+  padding-top: 28px;
+  border-top: 1px solid var(--border);
+}
+
+footer.contact h2 {
+  margin: 0 0 14px;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.contact-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 22px;
+}
+
+.contact-links a {
+  color: var(--text);
+  font-weight: 600;
+  text-decoration: none;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 2px;
+}
+
+.contact-links a:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+}
+</style>
+
+<div class="hero">
+  <p class="eyebrow">Portfolio</p>
+  <h1>Pavan Kapoor</h1>
+  <p class="tagline">Mechanical engineering projects spanning Formula SAE motorsports, simulation, battery R&amp;D, and manufacturing.</p>
+</div>
+
+<section class="cat">
+  <div class="cat-head">
+  <span class="cat-dot" style="background:#ef4444"></span>
+  <h2>Featured Projects</h2>
+  <span class="count">5</span>
+  </div>
+  <div class="grid">
+  <a class="card" href="projects/CNC_Lathe_Retrofit.html">
+  <img class="card-img" src="projects/covers/CNC_Lathe_Retrofit.jpg" onerror="this.onerror=null;this.src='projects/covers/placeholder.svg'" alt="CNC Lathe Retrofit">
+  <div class="card-body">
+  <h3>CNC Lathe Retrofit</h3>
+  <p>Design and fabrication project</p>
+  </div>
+  </a>
+  <a class="card" href="projects/VTOL_Drone_Wildfire_Response.html">
+  <img class="card-img" src="projects/covers/VTOL_Drone_Wildfire_Response.jpg" onerror="this.onerror=null;this.src='projects/covers/placeholder.svg'" alt="VTOL Drone for Wildfire Response">
+  <div class="card-body">
+  <h3>VTOL Drone for Wildfire Response</h3>
+  <p>VFS DBVF Competition</p>
+  </div>
+  </a>
+  <a class="card" href="projects/Tractive_System_Battery.html">
+  <img class="card-img" src="projects/covers/Tractive_System_Battery.jpg" onerror="this.onerror=null;this.src='projects/covers/placeholder.svg'" alt="Tractive System Battery">
+  <div class="card-body">
+  <h3>Tractive System Battery</h3>
+  <p></p>
+  </div>
+  </a>
+  <a class="card" href="projects/Motorsports.html">
+  <img class="card-img" src="projects/covers/Motorsports.jpg" onerror="this.onerror=null;this.src='projects/covers/placeholder.svg'" alt="Cooper Union Motorsports: Formula SAE">
+  <div class="card-body">
+  <h3>Cooper Union Motorsports: Formula SAE</h3>
+  <p>Nosecone, firewall, anti-intrusion plate, harness tabs, drivetrain &amp; accumulator mounting</p>
+  </div>
+  </a>
+  <a class="card" href="projects/Sumo_Robot.html">
+  <img class="card-img" src="projects/covers/Sumo_Robot.jpg" onerror="this.onerror=null;this.src='projects/covers/placeholder.svg'" alt="Sumo Robot Project">
+  <div class="card-body">
+  <h3>Sumo Robot Project</h3>
+  <p>Custom overmolded wheels, ground-effect downforce fan, 3D printed chassis</p>
+  </div>
+  </a>
+  </div>
+</section>
+
+<section class="cat">
+  <div class="cat-head">
+  <span class="cat-dot" style="background:#16a34a"></span>
+  <h2>Internships</h2>
+  <span class="count">2</span>
+  </div>
+  <div class="grid">
+  <a class="card" href="projects/Tesla_Battery_Engineering_Intern.html">
+  <img class="card-img" src="projects/covers/Tesla_Battery_Engineering_Intern.jpg" onerror="this.onerror=null;this.src='projects/covers/placeholder.svg'" alt="Tesla">
+  <div class="card-body">
+  <h3>Tesla</h3>
+  <p>Battery Engineering Intern</p>
+  </div>
+  </a>
+  <a class="card" href="projects/Beta_Technologies_Battery_RD_Intern.html">
+  <img class="card-img" src="projects/covers/Beta_Technologies_Battery_RD_Intern.jpg" onerror="this.onerror=null;this.src='projects/covers/placeholder.svg'" alt="Beta Technologies">
+  <div class="card-body">
+  <h3>Beta Technologies</h3>
+  <p>Battery R&amp;D Intern</p>
+  </div>
+  </a>
+  </div>
+</section>
+
+<section class="cat">
+  <div class="cat-head">
+  <span class="cat-dot" style="background:#2563eb"></span>
+  <h2>Simulation</h2>
+  <span class="count">5</span>
+  </div>
+  <div class="grid">
+  <a class="card" href="projects/Axial_Air_Compressor_CFD.html">
+  <img class="card-img" src="projects/covers/Axial_Air_Compressor_CFD.jpg" onerror="this.onerror=null;this.src='projects/covers/placeholder.svg'" alt="Axial Air Compressor CFD">
+  <div class="card-body">
+  <h3>Axial Air Compressor CFD</h3>
+  <p>Multi-stage axial compressor for a turbofan engine</p>
+  </div>
+  </a>
+  <a class="card" href="projects/Automotive_Heat_Exchanger_CFD.html">
+  <img class="card-img" src="projects/covers/Automotive_Heat_Exchanger_CFD.jpg" onerror="this.onerror=null;this.src='projects/covers/placeholder.svg'" alt="Automotive Heat Exchanger CFD">
+  <div class="card-body">
+  <h3>Automotive Heat Exchanger CFD</h3>
+  <p>Oil-to-air heat exchanger design</p>
+  </div>
+  </a>
+  <a class="card" href="projects/Table_Design_APDL.html">
+  <img class="card-img" src="projects/covers/Table_Design_APDL.jpg" onerror="this.onerror=null;this.src='projects/covers/placeholder.svg'" alt="Table Design in APDL">
+  <div class="card-body">
+  <h3>Table Design in APDL</h3>
+  <p>Structural design and analysis in ANSYS APDL</p>
+  </div>
+  </a>
+  <a class="card" href="projects/Windmill_Tower_Design_FEA.html">
+  <img class="card-img" src="projects/covers/Windmill_Tower_Design_FEA.jpg" onerror="this.onerror=null;this.src='projects/covers/placeholder.svg'" alt="Windmill Tower Design">
+  <div class="card-body">
+  <h3>Windmill Tower Design</h3>
+  <p>Structural FEA</p>
+  </div>
+  </a>
+  <a class="card" href="projects/Turducken_Thermal_Simulation_FEA.html">
+  <img class="card-img" src="projects/covers/Turducken_Thermal_Simulation_FEA.jpg" onerror="this.onerror=null;this.src='projects/covers/placeholder.svg'" alt="Turducken Thermal Simulation">
+  <div class="card-body">
+  <h3>Turducken Thermal Simulation</h3>
+  <p>Transient thermal FEA</p>
+  </div>
+  </a>
+  </div>
+</section>
+
+<section class="cat">
+  <div class="cat-head">
+  <span class="cat-dot" style="background:#64748b"></span>
+  <h2>Fabrication</h2>
+  <span class="count">2</span>
+  </div>
+  <div class="grid">
+  <a class="card" href="projects/CNC_Machining.html">
+  <img class="card-img" src="projects/covers/CNC_Machining.jpg" onerror="this.onerror=null;this.src='projects/covers/placeholder.svg'" alt="CNC Machining">
+  <div class="card-body">
+  <h3>CNC Machining</h3>
+  <p>Name plate engraving, isogrid coaster</p>
+  </div>
+  </a>
+  <a class="card" href="projects/Rotary_Broach.html">
+  <img class="card-img" src="projects/covers/Rotary_Broach.jpg" onerror="this.onerror=null;this.src='projects/covers/placeholder.svg'" alt="Rotary Broach">
+  <div class="card-body">
+  <h3>Rotary Broach</h3>
+  <p></p>
+  </div>
+  </a>
+  </div>
+</section>
+
+<section class="cat">
+  <div class="cat-head">
+  <span class="cat-dot" style="background:#a855f7"></span>
+  <h2>Mini-Class Projects</h2>
+  <span class="count">1</span>
+  </div>
+  <div class="grid">
+  <a class="card" href="projects/Cookie_Cutter_Press.html">
+  <img class="card-img" src="projects/covers/Cookie_Cutter_Press.jpg" onerror="this.onerror=null;this.src='projects/covers/placeholder.svg'" alt="Cookie Cutter Press">
+  <div class="card-body">
+  <h3>Cookie Cutter Press</h3>
+  <p>Custom shape cookie cutter press, two build iterations</p>
+  </div>
+  </a>
+  </div>
+</section>
+
+<section class="cat">
+  <div class="cat-head">
+  <span class="cat-dot" style="background:#14b8a6"></span>
+  <h2>Personal Projects</h2>
+  <span class="count">0</span>
+  </div>
+  <p class="empty-note">More to come.</p>
+</section>
+
+<footer class="contact">
+  <h2>Contact</h2>
+  <div class="contact-links">
+  <a href="mailto:pavantarunkapoor@gmail.com">pavantarunkapoor@gmail.com</a>
+  <a href="https://www.linkedin.com/in/pavankap00r/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+  <a href="https://drive.google.com/file/d/1Na3Xy6BOd0DEtm0VT_4_M8vX_TSOggat/view?usp=sharing" target="_blank" rel="noopener noreferrer">Resume</a>
+  </div>
+</footer>

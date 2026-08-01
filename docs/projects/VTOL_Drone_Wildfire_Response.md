@@ -77,3 +77,11 @@ table.gallery img { width:100% !important; height:auto !important; border-radius
 # VTOL Drone for Wildfire Response
 ### VFS DBVF Competition
 
+![VTOL Capstone Poster](../drone/VTOL_Capstone_Poster.jpg)
+
+For our ME394 capstone, we built a quadcopter to compete in the Vertical Flight Society's Design, Build, Vertical Flight (DBVF) competition — an electric VTOL cargo aircraft that tilts 75° into forward flight and carries a hanging electromagnet to grab and drop 2.5 lb payloads mid-mission, simulating aerial fire-suppressant delivery. Four 1.1 kW motors on 22×6.6" carbon fiber props are driven off a 24V 23Ah pack; the wings use 3D-printed NACA-4418 airfoils with leading-edge slats, which our CFD runs showed were 27% more efficient than a plain airfoil at the aircraft's cruise tilt angle.
+
+Team: Santiago Helbig, Adiv Ish-Shalom, Andrew Lunyk, Josef Kucher, and me, advised by Professor Wootton. We placed 5th of 20 teams and took home the 2nd-best technical report — Cooper Union's best VFS finish to date — clearing 60.5% of available points against a 50% goal, with our best run landing both autonomous missions plus five manual pickup-and-drop cycles inside the 10-minute window.
+
+![Final aircraft, preflight](../drone/Airfoil.JPG)
+

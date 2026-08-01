@@ -72,6 +72,14 @@ body {
   max-width: 56ch;
 }
 
+.hero p.note {
+  margin: 12px 0 0;
+  font-size: 0.9rem;
+  font-style: italic;
+  color: var(--muted);
+  max-width: 56ch;
+}
+
 /* ---------- category sections ---------- */
 section.cat {
   margin: 0 0 48px;
@@ -226,6 +234,7 @@ footer.contact h2 {
   <p class="eyebrow">Portfolio</p>
   <h1>Pavan Kapoor</h1>
   <p class="tagline">Mechanical engineering projects spanning Formula SAE motorsports, simulation, battery R&amp;D, and manufacturing.</p>
+  <p class="note">This portfolio is new and still a work in progress — I'm actively filling in more projects, photos, and writeups.</p>
 </div>
 
 <section class="cat">
